@@ -3,12 +3,9 @@
 import {
   Leaf,
   MapPin,
-  Phone,
-  Mail,
   MessageCircle,
   Clock,
   Instagram,
-  Facebook,
   Youtube,
   ArrowUpRight,
 } from "lucide-react";
@@ -51,9 +48,6 @@ export function Footer() {
               <SocialIcon href={socialLinks.instagram} label="Instagram">
                 <Instagram className="h-4 w-4" />
               </SocialIcon>
-              <SocialIcon href={socialLinks.facebook} label="Facebook">
-                <Facebook className="h-4 w-4" />
-              </SocialIcon>
               <SocialIcon href={socialLinks.youtube} label="YouTube">
                 <Youtube className="h-4 w-4" />
               </SocialIcon>
@@ -85,14 +79,6 @@ export function Footer() {
               <li className="flex gap-3">
                 <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-sage" />
                 <span>{villageContact.address}</span>
-              </li>
-              <li className="flex gap-3">
-                <Phone className="mt-0.5 h-4 w-4 shrink-0 text-sage" />
-                <span>{villageContact.phone}</span>
-              </li>
-              <li className="flex gap-3">
-                <Mail className="mt-0.5 h-4 w-4 shrink-0 text-sage" />
-                <span className="break-all">{villageContact.email}</span>
               </li>
               <li className="flex gap-3">
                 <MessageCircle className="mt-0.5 h-4 w-4 shrink-0 text-sage" />

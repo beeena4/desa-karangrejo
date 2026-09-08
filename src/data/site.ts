@@ -17,19 +17,16 @@ export const siteConfig = {
 
 export const villageContact = {
   address:
-    "Balai Desa Karangrejo, Jl. Raya Kawedanan, Dukuh Karangrejo, Desa Karangrejo, Kec. Kawedanan, Kab. Magetan, Jawa Timur 63354",
-  phone: "(0271) 000-0000",
-  email: "pemdes.karangrejo@magetan.go.id",
-  whatsapp: "6281234567890",
-  whatsappDisplay: "+62 812-3456-7890",
+    "Jl. Raya Bendo, Dukuh Purwosari, Desa Karangrejo, Kec. Kawedanan, Kabupaten Magetan, Jawa Timur 63382",
+  whatsapp: "6289504189599",
+  whatsappDisplay: "0895-0418-9599",
   mapEmbed:
-    "https://www.google.com/maps?q=Karangrejo,Kawedanan,Magetan&output=embed",
-  hours: "Senin – Jumat • 08.00 – 14.00 WIB",
+    "https://maps.app.goo.gl/wLsrYhjBUd8T7iqF8",
+  hours: "Senin – Jumat • 08.00 – 15.00 WIB",
 } as const;
 
 export const socialLinks = {
   instagram: "https://instagram.com/desa.karangrejo",
-  facebook: "https://facebook.com/desa.karangrejo",
   youtube: "https://youtube.com/@desa-karangrejo",
 } as const;
 
@@ -38,10 +35,10 @@ export const socialLinks = {
  * Ganti placeholder di bawah dengan tautan Google Form yang sebenarnya.
  */
 export const letterFormLinks = {
-  domisili: "[LINK_GFORM_DOMISILI]",
-  usaha: "[LINK_GFORM_USAHA]",
-  tidakMampu: "[LINK_GFORM_TIDAK_MAMPU]",
-  kehilangan: "[LINK_GFORM_KEHILANGAN]",
+  domisili: "https://forms.gle/NLKQDreyRGfuiGDv6",
+  usaha: "https://forms.gle/ye6T32rQA8wzEefq8",
+  tidakMampu: "https://forms.gle/bLRVA2QU8mg9FwYM6",
+  kehilangan: "https://forms.gle/gNx5QbodmES8pFMW6",
 } as const;
 
 export type NavKey =
