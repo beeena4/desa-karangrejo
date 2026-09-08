@@ -1,7 +1,8 @@
 export const villageStats = [
   { label: "Luas Wilayah", value: 312, suffix: " Ha", icon: "map" },
   { label: "Jumlah Dusun", value: 3, suffix: " Dusun", icon: "tree" },
-  { label: "Jumlah RT/RW", value: 24, suffix: " RT", icon: "home" },
+  { label: "Jumlah RT", value: 24, suffix: " RT", icon: "home" },
+  { label: "Jumlah RW", value: 10, suffix: " RW", icon: "users" },
 ] as const;
 
 export type Stat = (typeof villageStats)[number];
@@ -31,10 +32,9 @@ export const dusunList = [
 ];
 
 export const villageHistory = [
-  "Desa Karangrejo merupakan desa di Kecamatan Kawedanan, Kabupaten Magetan, yang terbentuk dari perpaduan tiga dukuh utama: Purwosari, Purwoseco, dan Karangrejo.",
-  "Nama Karangrejo bermakna \"karang yang rejeki\", mencerminkan harapan masyarakat akan tanah yang membawa keberkahan dan kesejahteraan bagi seluruh warganya.",
-  "Sejak dahulu, masyarakat Karangrejo hidup dari sektor pertanian dan pengolahan jamu tradisional yang diwariskan turun-temurun. Tradisi gotong royong tetap lestari hingga saat ini.",
-  "Seiring waktu, Desa Karangrejo terus berkembang menjadi desa yang maju, mandiri, dan berbudaya, dengan komitmen memanfaatkan teknologi digital untuk meningkatkan pelayanan publik.",
+  "Menurut asal usul, Karangrejo terdiri dari dua suku kata yakni Karang dan Rejo. Karang mengandung arti batu dan Rejo mengandung makna ramai. Jadi Karangrejo berarti banyak bebatuan. Namun bila diartikan secara sejarahnya, maka desa ini penduduknya mempunyai semangat yang keras bagai batu di dalam mencapai cita-cita. Dan karena semangat yang keras, pantang menyerah inilah banyak didatangi oleh masyarakat dari luar untuk ngangsu kawruh pada masyarakat dan pemuka desa ini.",
+  "Risalah singkat ini bersumber dari beberapa tokoh Desa Karangrejo dan cerita para leluhur yang dituturkan secara turun-temurun. Sejak awal, desa ini dipimpin secara turun-temurun seperti sistem kerajaan, mulai dari demang (sebutan lurah zaman dahulu) hingga lurah dan kepala desa. Walaupun saat ini kepala desa dipilih sesuai zamannya, pemimpin yang terpilih masih memiliki garis keturunan dari pemimpin sebelumnya.",
+  "Tidak banyak diketahui kapan Dukuh Purwoseco dan Karangrejo disatukan karena kurangnya peninggalan dan data. Kedua pedukuhan ini menjadi satu kawasan tanpa pembatas yang jelas. Mulai tahun 1984, Desa Karangrejo dibagi menjadi tiga dusun: wilayah barat disebut Dusun Karangrejo, wilayah tengah disebut Dusun Purwosari, dan wilayah timur disebut Dusun Purwoseco. Setelah Pangeran Diponegoro ditangkap Belanda, banyak pengikutnya melarikan diri untuk mencari perlindungan ke Desa Karangrejo. Salah satunya adalah Ki Surodiko, yang karena kewibawaan dan kesaktiannya menjadi demang pertama Desa Karangrejo. Sementara itu, pedukuhan dipimpin oleh seorang palang bernama Ki Mangun Wijoyo.",
 ];
 
 export const visiMisi = {
@@ -50,21 +50,24 @@ export const visiMisi = {
 };
 
 export const governmentStructure = [
-  { role: "Kepala Desa", name: "Bapak H. Sutrisno, S.Sos", img: "images/profile-struktur.png" },
-  { role: "Sekretaris Desa", name: "Bapak Agus Priyanto, S.E", img: "images/profile-struktur.png" },
-  { role: "Kaur Keuangan", name: "Ibu Dwi Astuti, A.Md", img: "images/profile-struktur.png" },
-  { role: "Kaur Perencanaan", name: "Bapak Joko Susilo", img: "images/profile-struktur.png" },
-  { role: "Kasi Pemerintahan", name: "Bapak Suparman", img: "images/profile-struktur.png" },
-  { role: "Kasi Kesejahteraan", name: "Ibu Sulastri", img: "images/profile-struktur.png" },
-  { role: "Kasi Pelayanan", name: "Bapak Bambang Wijaya", img: "images/profile-struktur.png" },
-  { role: "Kepala Dusun Purwosari", name: "Bapak Wahyudi", img: "images/profile-struktur.png" },
+  { role: "Kepala Desa", name: "Suharno, SE", img: "images/profile-struktur.png" },
+  { role: "Sekretaris Desa", name: "Ika Dwi R.", img: "images/profile-struktur.png" },
+  { role: "Kasi Kesejahteraan", name: "Nurohim", img: "images/profile-struktur.png" },
+  { role: "Kasi Pelayanan", name: "Abdul Wahib", img: "images/profile-struktur.png" },
+  { role: "Kasi Pemerintahan", name: "Lini Widyawati", img: "images/profile-struktur.png" },
+  { role: "Kaur Tata Usaha & Umum", name: "Suwarno", img: "images/profile-struktur.png" },
+  { role: "Kaur Keuangan", name: "Tarmuji", img: "images/profile-struktur.png" },
+  { role: "Kaur Perencanaan", name: "Sunarto", img: "images/profile-struktur.png" },
+  { role: "Kasun Karangrejo", name: "Lasito", img: "images/profile-struktur.png" },
+  { role: "Kasun Purwosari", name: "Drs. Suyitno", img: "images/profile-struktur.png" },
+  { role: "Kasun Purwoseco", name: "Zawa Ida Fauziatin, S.Pd.", img: "images/profile-struktur.png" },
 ];
 
 export const territoryData = [
   { label: "Luas Wilayah", value: "312 Ha" },
-  { label: "Batas Utara", value: "Desa Kawedanan" },
-  { label: "Batas Selatan", value: "Hutan dan Persawahan" },
-  { label: "Batas Timur", value: "Desa Selopuro" },
-  { label: "Batas Barat", value: "Desa Ngunut" },
+  { label: "Batas Utara", value: "Desa Belotan" },
+  { label: "Batas Selatan", value: "Desa Sampung" },
+  { label: "Batas Timur", value: "Desa Genengan" },
+  { label: "Batas Barat", value: "Desa Ngadirejo" },
   { label: "Ketinggian", value: "± 150 mdpl" },
 ];
