@@ -29,7 +29,7 @@ export const letterServices: LetterService[] = [
     description:
       "Surat pengantar untuk mengurus izin usaha atau keperluan permodalan UMKM.",
     icon: Store,
-    image: "images/potensi-umkm.png",
+    image: "images/surat-usaha.jpg",
     formUrl: letterFormLinks.usaha,
   },
   {
@@ -38,7 +38,7 @@ export const letterServices: LetterService[] = [
     description:
       "Surat keterangan tempat tinggal warga di wilayah Desa Karangrejo.",
     icon: Home,
-    image: "images/facility-balai.png",
+    image: "images/surat-domisili.jpg",
     formUrl: letterFormLinks.domisili,
   },
   {
@@ -47,7 +47,7 @@ export const letterServices: LetterService[] = [
     description:
       "Surat keterangan untuk keperluan bantuan sosial, beasiswa, atau keringanan biaya.",
     icon: HandHeart,
-    image: "images/facility-puskesmas.png",
+    image: "images/surat-tidakmampu.jpg",
     formUrl: letterFormLinks.tidakMampu,
   },
   {
@@ -56,7 +56,7 @@ export const letterServices: LetterService[] = [
     description:
       "Surat keterangan kehilangan dokumen atau barang sebagai persyaratan pengurusan lebih lanjut.",
     icon: FileWarning,
-    image: "images/facility-balai.png",
+    image: "images/surat-kehilangan.jpg",
     formUrl: letterFormLinks.kehilangan,
   },
 ];
