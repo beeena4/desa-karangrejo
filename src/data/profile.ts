@@ -1,8 +1,7 @@
 export const villageStats = [
   { label: "Luas Wilayah", value: 312, suffix: " Ha", icon: "map" },
-  { label: "Jumlah Penduduk", value: 2845, suffix: " Jiwa", icon: "users" },
   { label: "Jumlah Dusun", value: 3, suffix: " Dusun", icon: "tree" },
-  { label: "Jumlah RT/RW", value: 8, suffix: " RT", icon: "home" },
+  { label: "Jumlah RT/RW", value: 24, suffix: " RT", icon: "home" },
 ] as const;
 
 export type Stat = (typeof villageStats)[number];
@@ -12,45 +11,24 @@ export const dusunList = [
     name: "Dukuh Karangrejo",
     description:
       "Pusat pemerintahan desa dengan balai desa, masjid jami', dan pasar desa.",
-    rw: "RW 01-04",
+    rw: "04 RW",
     rt: "12 RT",
   },
   {
     name: "Dukuh Purwosari",
     description:
       "Dukuh dengan mayoritas warga berprofesi sebagai petani dan pengrajin jamu tradisional.",
-    rw: "RW 05-07",
-    rt: "5 RT",
+    rw: "03 RW",
+    rt: "05 RT",
   },
   {
     name: "Dukuh Purwoseco",
     description:
       "Dukuh yang dikenal sebagai sentra kerajinan bambu dan aktivitas pertanian.",
-    rw: "RW 07-10",
-    rt: "7 RT",
+    rw: "04 RW",
+    rt: "07 RT",
   },
 ];
-
-export const demographicData = {
-  byGender: [
-    { label: "Laki-laki", value: 1432 },
-    { label: "Perempuan", value: 1413 },
-  ],
-  byAge: [
-    { label: "0–14 tahun", value: 612 },
-    { label: "15–39 tahun", value: 980 },
-    { label: "40–59 tahun", value: 740 },
-    { label: "60+ tahun", value: 513 },
-  ],
-  byProfession: [
-    { label: "Petani", value: 1040 },
-    { label: "Pedagang", value: 380 },
-    { label: "Wiraswasta / UMKM", value: 320 },
-    { label: "Pegawai", value: 180 },
-    { label: "Pelajar / Mahasiswa", value: 540 },
-    { label: "Lainnya", value: 385 },
-  ],
-};
 
 export const villageHistory = [
   "Desa Karangrejo merupakan desa di Kecamatan Kawedanan, Kabupaten Magetan, yang terbentuk dari perpaduan tiga dukuh utama: Purwosari, Purwoseco, dan Karangrejo.",

@@ -15,12 +15,10 @@ import {
   governmentStructure,
   territoryData,
   dusunList,
-  demographicData,
 } from "@/data/profile";
 import {
   History,
   Target,
-  Users,
   Map,
   TreePine,
   Home,
@@ -42,7 +40,7 @@ export function ProfilView() {
       <PageHero
         eyebrow="Profil Desa"
         title="Profil Desa Karangrejo"
-        description="Mengenal lebih dalam sejarah, visi-misi, struktur pemerintahan, data wilayah, dan demografi Desa Karangrejo."
+        description="Mengenal lebih dalam sejarah, visi-misi, struktur pemerintahan, dan data wilayah Desa Karangrejo."
       />
 
       {/* Stats */}
@@ -210,27 +208,6 @@ export function ProfilView() {
         </div>
       </section>
 
-      {/* Data Penduduk & Demografi */}
-      <section className="px-4 sm:px-6 lg:px-8 py-16 md:py-24">
-        <div className="mx-auto max-w-7xl">
-          <SectionHeading
-            eyebrow="Kependudukan"
-            title="Data Penduduk & Demografi"
-            description="Komposisi penduduk Desa Karangrejo berdasarkan jenis kelamin, kelompok usia, dan mata pencaharian."
-            align="left"
-          />
-          <div className="mt-12 grid gap-6 lg:grid-cols-3">
-            <DemoCard title="Berdasarkan Jenis Kelamin" data={demographicData.byGender} />
-            <DemoCard title="Berdasarkan Kelompok Usia" data={demographicData.byAge} />
-            <DemoCard title="Berdasarkan Mata Pencaharian" data={demographicData.byProfession} />
-          </div>
-          <p className="mt-6 text-xs text-muted-foreground">
-            * Data demografi merupakan nilai contoh yang dapat diperbarui sesuai
-            data resmi terkini.
-          </p>
-        </div>
-      </section>
-
       {/* Dusun */}
       <section className="px-4 sm:px-6 lg:px-8 py-16 md:py-24 bg-secondary/40">
         <div className="mx-auto max-w-7xl">
@@ -279,49 +256,5 @@ export function ProfilView() {
         </div>
       </section>
     </>
-  );
-}
-
-function DemoCard({
-  title,
-  data,
-}: {
-  title: string;
-  data: { label: string; value: number }[];
-}) {
-  const max = Math.max(...data.map((d) => d.value));
-  const total = data.reduce((s, d) => s + d.value, 0);
-  return (
-    <Reveal>
-      <div className="h-full rounded-3xl border border-border bg-card p-6">
-        <h3 className="text-sm font-semibold uppercase tracking-wide text-muted-foreground">
-          {title}
-        </h3>
-        <div className="mt-5 space-y-3.5">
-          {data.map((d) => (
-            <div key={d.label}>
-              <div className="flex items-center justify-between text-sm">
-                <span className="text-foreground">{d.label}</span>
-                <span className="font-semibold text-foreground">
-                  {d.value.toLocaleString("id-ID")}
-                </span>
-              </div>
-              <div className="mt-1.5 h-2 overflow-hidden rounded-full bg-muted">
-                <motion.div
-                  initial={{ width: 0 }}
-                  whileInView={{ width: `${(d.value / max) * 100}%` }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
-                  className="h-full rounded-full bg-gradient-to-r from-primary to-natural"
-                />
-              </div>
-            </div>
-          ))}
-        </div>
-        <p className="mt-5 border-t border-border pt-4 text-xs text-muted-foreground">
-          Total: {total.toLocaleString("id-ID")} jiwa
-        </p>
-      </div>
-    </Reveal>
   );
 }
