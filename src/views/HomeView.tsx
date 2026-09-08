@@ -4,7 +4,6 @@ import { Hero } from "@/components/site/Hero";
 import { QuickAccess } from "@/components/site/QuickAccess";
 import { AboutVillage } from "@/components/site/AboutVillage";
 import { VillageStats } from "@/components/site/VillageStats";
-import { NewsSection } from "@/components/site/NewsSection";
 import { CTASection } from "@/components/site/CTASection";
 import { SectionHeading } from "@/components/site/VillageStats";
 import { Reveal, Stagger, staggerItem } from "@/components/site/Reveal";
@@ -85,7 +84,6 @@ export function HomeView() {
         </div>
       </section>
 
-      <NewsSection />
       <CTASection />
     </>
   );

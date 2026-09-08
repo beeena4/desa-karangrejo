@@ -81,7 +81,7 @@ export function ProfilView() {
             <h2 className="mt-5 text-3xl md:text-4xl font-bold tracking-tight text-foreground">
               Asal-usul Karangrejo
             </h2>
-            <div className="mt-6 space-y-4 text-base leading-relaxed text-muted-foreground">
+            <div className="mt-6 space-y-4 text-justify text-sm leading-relaxed text-muted-foreground">
               {villageHistory.map((p, i) => (
                 <p key={i}>{p}</p>
               ))}
@@ -156,12 +156,30 @@ export function ProfilView() {
             title="Struktur Pemerintahan Desa"
             description="Perangkat desa yang melayani dan mengayomi masyarakat Desa Karangrejo."
           />
-          <Stagger className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+          <Reveal className="mt-10">
+            <div className="overflow-hidden rounded-3xl border border-border bg-card shadow-lg">
+              <img
+                src={assetPath("images/profile-struktur.png")}
+                alt="Foto bersama perangkat Desa Karangrejo"
+                className="h-64 w-full object-cover object-center sm:h-80 lg:h-[26rem]"
+                loading="lazy"
+              />
+            </div>
+          </Reveal>
+          <Stagger className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-12">
             {governmentStructure.map((person, i) => (
               <motion.div
                 key={i}
                 variants={staggerItem}
-                className="group overflow-hidden rounded-3xl border border-border bg-card transition-all duration-300 hover:shadow-lg hover:-translate-y-1"
+                className={`group overflow-hidden rounded-3xl border border-border bg-card transition-all duration-300 hover:shadow-lg hover:-translate-y-1 lg:col-span-3 ${
+                  i === 8
+                    ? "lg:col-start-2"
+                    : i === 9
+                      ? "lg:col-start-6"
+                      : i === 10
+                        ? "lg:col-start-10"
+                        : ""
+                }`}
               >
                 <div className="relative aspect-square overflow-hidden bg-secondary">
                   <img
