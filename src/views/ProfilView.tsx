@@ -20,6 +20,7 @@ import {
   History,
   Target,
   Map,
+  Users,
   TreePine,
   Home,
   Flag,
