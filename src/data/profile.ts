@@ -8,23 +8,23 @@ export type Stat = (typeof villageStats)[number];
 
 export const dusunList = [
   {
-    name: "Dukuh Karangrejo",
+    name: "Dusun Karangrejo",
     description:
       "Pusat pemerintahan desa dengan balai desa, masjid jami', dan pasar desa.",
     rw: "04 RW",
     rt: "12 RT",
   },
   {
-    name: "Dukuh Purwosari",
+    name: "Dusun Purwosari",
     description:
-      "Dukuh dengan mayoritas warga berprofesi sebagai petani dan pengrajin jamu tradisional.",
+      "Dusun dengan mayoritas warga berprofesi sebagai petani dan pengrajin jamu tradisional.",
     rw: "03 RW",
     rt: "05 RT",
   },
   {
-    name: "Dukuh Purwoseco",
+    name: "Dusun Purwoseco",
     description:
-      "Dukuh yang dikenal sebagai sentra kerajinan bambu dan aktivitas pertanian.",
+      "Dusun yang dikenal sebagai sentra kerajinan bambu dan aktivitas pertanian.",
     rw: "04 RW",
     rt: "07 RT",
   },
@@ -33,7 +33,7 @@ export const dusunList = [
 export const villageHistory = [
   "Menurut asal usul, Karangrejo terdiri dari dua suku kata yakni Karang dan Rejo. Karang mengandung arti batu dan Rejo mengandung makna ramai. Jadi Karangrejo berarti banyak bebatuan. Namun bila diartikan secara sejarahnya, maka desa ini penduduknya mempunyai semangat yang keras bagai batu di dalam mencapai cita-cita. Dan karena semangat yang keras, pantang menyerah inilah banyak didatangi oleh masyarakat dari luar untuk ngangsu kawruh pada masyarakat dan pemuka desa ini.",
   "Risalah singkat ini bersumber dari beberapa tokoh Desa Karangrejo dan cerita para leluhur yang dituturkan secara turun-temurun. Sejak awal, desa ini dipimpin secara turun-temurun seperti sistem kerajaan, mulai dari demang (sebutan lurah zaman dahulu) hingga lurah dan kepala desa. Walaupun saat ini kepala desa dipilih sesuai zamannya, pemimpin yang terpilih masih memiliki garis keturunan dari pemimpin sebelumnya.",
-  "Tidak banyak diketahui kapan Dukuh Purwoseco dan Karangrejo disatukan karena kurangnya peninggalan dan data. Kedua pedukuhan ini menjadi satu kawasan tanpa pembatas yang jelas. Mulai tahun 1984, Desa Karangrejo dibagi menjadi tiga dusun: wilayah barat disebut Dusun Karangrejo, wilayah tengah disebut Dusun Purwosari, dan wilayah timur disebut Dusun Purwoseco. Setelah Pangeran Diponegoro ditangkap Belanda, banyak pengikutnya melarikan diri untuk mencari perlindungan ke Desa Karangrejo. Salah satunya adalah Ki Surodiko, yang karena kewibawaan dan kesaktiannya menjadi demang pertama Desa Karangrejo. Sementara itu, pedukuhan dipimpin oleh seorang palang bernama Ki Mangun Wijoyo.",
+  "Tidak banyak diketahui kapan Dusun Purwoseco dan Karangrejo disatukan karena kurangnya peninggalan dan data. Kedua dusun ini menjadi satu kawasan tanpa pembatas yang jelas. Mulai tahun 1984, Desa Karangrejo dibagi menjadi tiga dusun: wilayah barat disebut Dusun Karangrejo, wilayah tengah disebut Dusun Purwosari, dan wilayah timur disebut Dusun Purwoseco. Setelah Pangeran Diponegoro ditangkap Belanda, banyak pengikutnya melarikan diri untuk mencari perlindungan ke Desa Karangrejo. Salah satunya adalah Ki Surodiko, yang karena kewibawaan dan kesaktiannya menjadi demang pertama Desa Karangrejo. Sementara itu, dusun dipimpin oleh seorang palang bernama Ki Mangun Wijoyo.",
 ];
 
 export const visiMisi = {
