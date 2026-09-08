@@ -17,6 +17,7 @@ import {
   Package,
   User,
   ArrowUpRight,
+  Star,
 } from "lucide-react";
 
 type Filter = UmkmCategory | "Semua";
@@ -124,6 +125,12 @@ export function UmkmView() {
                     <span className="absolute left-4 top-4 inline-flex items-center rounded-full bg-white/90 px-3 py-1 text-xs font-semibold text-forest backdrop-blur-sm">
                       {u.category}
                     </span>
+                    {u.featured && (
+                      <span className="absolute right-4 top-4 inline-flex items-center gap-1.5 rounded-full bg-amber-400 px-3 py-1 text-xs font-bold text-amber-950 shadow-sm">
+                        <Star className="h-3.5 w-3.5 fill-current" aria-hidden="true" />
+                        UMKM Unggulan
+                      </span>
+                    )}
                   </div>
                   <div className="flex flex-1 flex-col p-5">
                     <h3 className="text-lg font-bold text-foreground">{u.name}</h3>

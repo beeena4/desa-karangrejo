@@ -5,18 +5,37 @@ import { ArrowRight, FileText, MapPin, Leaf } from "lucide-react";
 import { siteConfig } from "@/data/site";
 import { useNavStore } from "@/store/nav";
 import { assetPath } from "@/lib/utils";
+import { useState } from "react";
 
 export function Hero() {
   const setNav = useNavStore((s) => s.setNav);
+  const [isImageHovered, setIsImageHovered] = useState(false);
+  const [imageOrigin, setImageOrigin] = useState("50% 50%");
+
+  const handleImageMouseMove = (event: React.MouseEvent<HTMLDivElement>) => {
+    const bounds = event.currentTarget.getBoundingClientRect();
+    const x = ((event.clientX - bounds.left) / bounds.width) * 100;
+    const y = ((event.clientY - bounds.top) / bounds.height) * 100;
+    setImageOrigin(`${x}% ${y}%`);
+  };
 
   return (
     <section className="relative isolate -mt-16 md:-mt-20 flex min-h-[100svh] items-center overflow-hidden">
       {/* Background image */}
-      <div className="absolute inset-0 z-0">
+      <div
+        className="absolute inset-0 z-0 cursor-zoom-in"
+        onMouseEnter={() => setIsImageHovered(true)}
+        onMouseMove={handleImageMouseMove}
+        onMouseLeave={() => setIsImageHovered(false)}
+      >
         <img
-          src={assetPath("images/hero.png")}
+          src={assetPath("images/background.png")}
           alt="Pemandangan Desa Karangrejo"
-          className="h-full w-full object-cover animate-slow-zoom"
+          className="h-full w-full object-cover transition-transform duration-150 ease-out"
+          style={{
+            transform: isImageHovered ? "scale(1.35)" : "scale(1)",
+            transformOrigin: imageOrigin,
+          }}
         />
         <div className="absolute inset-0 bg-gradient-to-r from-forest/85 via-forest/55 to-forest/30" />
         <div className="absolute inset-0 bg-gradient-to-t from-forest/70 via-transparent to-forest/20" />
