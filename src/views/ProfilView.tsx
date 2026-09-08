@@ -255,7 +255,7 @@ export function ProfilView() {
                   <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
                     {d.description}
                   </p>
-                  <div className="mt-5 grid grid-cols-3 gap-2 border-t border-border pt-4">
+                  <div className="mt-5 grid grid-cols-2 gap-2 border-t border-border pt-4">
                     <div>
                       <p className="text-[10px] uppercase tracking-wide text-muted-foreground">
                         RW
@@ -267,12 +267,6 @@ export function ProfilView() {
                         RT
                       </p>
                       <p className="text-sm font-bold text-foreground">{d.rt}</p>
-                    </div>
-                    <div>
-                      <p className="text-[10px] uppercase tracking-wide text-muted-foreground">
-                        Penduduk
-                      </p>
-                      <p className="text-sm font-bold text-foreground">{d.population}</p>
                     </div>
                   </div>
                 </div>

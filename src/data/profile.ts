@@ -9,28 +9,25 @@ export type Stat = (typeof villageStats)[number];
 
 export const dusunList = [
   {
+    name: "Dukuh Karangrejo",
+    description:
+      "Pusat pemerintahan desa dengan balai desa, masjid jami', dan pasar desa.",
+    rw: "RW 01-04",
+    rt: "12 RT",
+  },
+  {
     name: "Dukuh Purwosari",
     description:
       "Dukuh dengan mayoritas warga berprofesi sebagai petani dan pengrajin jamu tradisional.",
-    rw: "RW 01",
-    rt: "3 RT",
-    population: "± 980 Jiwa",
+    rw: "RW 05-07",
+    rt: "5 RT",
   },
   {
     name: "Dukuh Purwoseco",
     description:
       "Dukuh yang dikenal sebagai sentra kerajinan bambu dan aktivitas pertanian.",
-    rw: "RW 02",
-    rt: "3 RT",
-    population: "± 920 Jiwa",
-  },
-  {
-    name: "Dukuh Karangrejo",
-    description:
-      "Pusat pemerintahan desa dengan balai desa, masjid jami', dan pasar desa.",
-    rw: "RW 03",
-    rt: "2 RT",
-    population: "± 945 Jiwa",
+    rw: "RW 07-10",
+    rt: "7 RT",
   },
 ];
 
