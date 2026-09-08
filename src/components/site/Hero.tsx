@@ -75,10 +75,10 @@ export function Hero() {
             initial={{ opacity: 0, y: 28 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
-            className="mt-6 text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight text-white text-balance"
+            className="mt-6 text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.15] tracking-tight text-white text-balance"
           >
             Selamat Datang di{" "}
-            <span className="block bg-gradient-to-r from-white via-sage to-white bg-clip-text text-transparent">
+            <span className="block pb-1 bg-gradient-to-r from-white via-sage to-white bg-clip-text text-transparent">
               Desa Karangrejo
             </span>
           </motion.h1>

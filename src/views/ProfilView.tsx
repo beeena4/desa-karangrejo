@@ -47,22 +47,25 @@ export function ProfilView() {
       {/* Stats */}
       <section className="px-4 sm:px-6 lg:px-8 py-8 md:py-10">
         <div className="mx-auto max-w-7xl">
-          <Stagger className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-5">
+          <Stagger className="grid grid-cols-2 lg:grid-cols-3 gap-4 md:gap-5">
             {villageStats.map((stat) => {
               const Icon = iconMap[stat.icon as keyof typeof iconMap];
               return (
                 <motion.div
                   key={stat.label}
                   variants={staggerItem}
-                  className="rounded-3xl border border-border bg-card p-6 text-center"
+                  className="group relative overflow-hidden rounded-3xl border border-border bg-card p-6 text-center transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
                 >
-                  <span className="mx-auto inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-primary/10 text-primary">
-                    <Icon className="h-6 w-6" />
-                  </span>
-                  <p className="mt-4 text-3xl md:text-4xl font-bold tracking-tight text-foreground">
-                    <CountUp end={stat.value} suffix={stat.suffix} />
-                  </p>
-                  <p className="mt-1 text-sm text-muted-foreground">{stat.label}</p>
+                  <div className="absolute -right-6 -top-6 h-24 w-24 rounded-full bg-primary/5 transition-transform duration-500 group-hover:scale-150" />
+                  <div className="relative">
+                    <span className="mx-auto inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-primary/10 text-primary transition-transform duration-300 group-hover:scale-110">
+                      <Icon className="h-6 w-6" />
+                    </span>
+                    <p className="mt-4 text-3xl md:text-4xl font-bold tracking-tight text-foreground">
+                      <CountUp end={stat.value} suffix={stat.suffix} />
+                    </p>
+                    <p className="mt-1 text-sm text-muted-foreground">{stat.label}</p>
+                  </div>
                 </motion.div>
               );
             })}
@@ -92,9 +95,9 @@ export function ProfilView() {
               <div className="absolute -inset-3 -z-10 rounded-[2rem] bg-gradient-to-tr from-primary/15 to-sage-light/40 blur-2xl" />
               <div className="overflow-hidden rounded-[1.75rem] border border-border shadow-xl">
                 <img
-                  src={assetPath("images/profile-dusun.png")}
+                  src={assetPath("images/background.png")}
                   alt="Suasana dusun Desa Karangrejo"
-                  className="aspect-[4/3] w-full object-cover"
+                  className="aspect-[4/3] w-full object-cover object-[center_60%]"
                   loading="lazy"
                 />
               </div>

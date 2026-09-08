@@ -1,5 +1,4 @@
 export const villageStats = [
-  { label: "Luas Wilayah", value: 312, suffix: " Ha", icon: "map" },
   { label: "Jumlah Dusun", value: 3, suffix: " Dusun", icon: "tree" },
   { label: "Jumlah RT", value: 24, suffix: " RT", icon: "home" },
   { label: "Jumlah RW", value: 10, suffix: " RW", icon: "users" },
@@ -39,13 +38,17 @@ export const villageHistory = [
 
 export const visiMisi = {
   visi:
-    "Terwujudnya Desa Karangrejo yang Maju, Mandiri, Berbudaya, dan Sejahtera berlandaskan gotong royong.",
+    "Terwujudnya Kesejahteraan dan Kemakmuran Masyarakat Desa Karangrejo melalui Peningkatan SDM serta Guyub Rukun Mbangun Deso.",
   misi: [
-    "Meningkatkan kualitas pelayanan publik berbasis digital dan transparan.",
-    "Memberdayakan ekonomi masyarakat melalui pertanian, UMKM, dan jamu tradisional.",
-    "Melestarikan budaya, tradisi, dan nilai-nilai gotong royong warga.",
-    "Membangun infrastruktur desa yang merata dan berkelanjutan.",
-    "Meningkatkan kualitas sumber daya manusia melalui pendidikan dan pelatihan.",
+    "Melaksanakan pelayanan administrasi pemerintahan dan keuangan desa melalui pelayanan satu pintu yang akuntabel.",
+    "Meningkatkan kualitas sumber daya manusia (SDM) dan pelayanan terhadap masyarakat di berbagai bidang.",
+    "Mengembangkan potensi desa dalam mengelola SDA dan SDM.",
+    "Meningkatkan dan memperkuat fungsi dan peranan lembaga desa.",
+    "Memperkuat nilai-nilai luhur budaya gotong royong dalam membangun desa.",
+    "Mewujudkan suasana aman dan kondusif.",
+    "Membentuk karakter berwira usaha dalam pengelolaan Pemerintah, kelembagaan dan kemasyarakatan.",
+    "Mewujudkan Desa Karangrejo menjadi desa yang selalu terdepan dalam melaksanakan pembangunan dengan memanfaatkan sektor-sektor unggulan.",
+    "Melestarikan budaya tradisi dan adat istiadat masyarakat.",
   ],
 };
 
@@ -64,7 +67,6 @@ export const governmentStructure = [
 ];
 
 export const territoryData = [
-  { label: "Luas Wilayah", value: "312 Ha" },
   { label: "Batas Utara", value: "Desa Belotan" },
   { label: "Batas Selatan", value: "Desa Sampung" },
   { label: "Batas Timur", value: "Desa Genengan" },
