@@ -7,6 +7,7 @@ import { Reveal } from "@/components/site/Reveal";
 import { CTASection } from "@/components/site/CTASection";
 import { umkmList, umkmCategories, type UmkmCategory } from "@/data/umkm";
 import { useNavStore } from "@/store/nav";
+import { assetPath } from "@/lib/utils";
 import {
   Search,
   MapPin,
@@ -16,8 +17,6 @@ import {
   Package,
   User,
   ArrowUpRight,
-  PlusCircle,
-  Store,
 } from "lucide-react";
 
 type Filter = UmkmCategory | "Semua";
@@ -100,23 +99,25 @@ export function UmkmView() {
           </Reveal>
 
           {/* Grid */}
-          <motion.div layout className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-            <AnimatePresence mode="popLayout">
+          <AnimatePresence mode="wait" initial={false}>
+            <motion.div
+              key={`${filter}-${query}`}
+              initial={{ opacity: 0, y: 8 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -4 }}
+              transition={{ duration: 0.35, ease: [0.22, 1, 0.36, 1] }}
+              className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3"
+            >
               {filtered.map((u) => (
-                <motion.article
+                <article
                   key={u.id}
-                  layout
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  exit={{ opacity: 0, scale: 0.96 }}
-                  transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
-                  className="group flex flex-col overflow-hidden rounded-3xl border border-border bg-card transition-all duration-300 hover:shadow-xl hover:-translate-y-1"
+                  className="group flex flex-col overflow-hidden rounded-3xl border border-border bg-card transition-shadow duration-300 hover:shadow-lg"
                 >
                   <div className="relative aspect-[16/11] overflow-hidden">
                     <img
-                      src={u.image}
+                      src={assetPath(u.image)}
                       alt={u.name}
-                      className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
+                      className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
                       loading="lazy"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/55 to-transparent" />
@@ -152,10 +153,10 @@ export function UmkmView() {
                       </a>
                     </div>
                   </div>
-                </motion.article>
+                </article>
               ))}
-            </AnimatePresence>
-          </motion.div>
+            </motion.div>
+          </AnimatePresence>
 
           {filtered.length === 0 && (
             <div className="mt-12 text-center text-sm text-muted-foreground">
@@ -163,28 +164,6 @@ export function UmkmView() {
             </div>
           )}
 
-          {/* Register CTA */}
-          <Reveal delay={0.1}>
-            <div className="mt-12 relative overflow-hidden rounded-3xl border border-dashed border-primary/30 bg-primary/5 p-8 md:p-10 text-center">
-              <div className="absolute -right-10 -top-10 h-40 w-40 rounded-full bg-primary/10 blur-2xl" />
-              <div className="relative">
-                <span className="mx-auto inline-flex h-14 w-14 items-center justify-center rounded-2xl bg-primary text-primary-foreground">
-                  <Store className="h-7 w-7" />
-                </span>
-                <h3 className="mt-5 text-2xl md:text-3xl font-bold text-foreground">
-                  Punya Usaha di Karangrejo?
-                </h3>
-                <p className="mx-auto mt-3 max-w-xl text-sm md:text-base leading-relaxed text-muted-foreground">
-                  Daftarkan UMKM Anda agar lebih dikenal oleh masyarakat luas
-                  melalui website resmi Desa Karangrejo.
-                </p>
-                <button className="group mt-6 inline-flex items-center gap-2 rounded-full bg-primary px-7 py-3.5 text-sm font-semibold text-primary-foreground shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg">
-                  <PlusCircle className="h-4 w-4" />
-                  Daftarkan UMKM Anda
-                </button>
-              </div>
-            </div>
-          </Reveal>
         </div>
       </section>
 
@@ -216,7 +195,7 @@ export function UmkmView() {
               </button>
               <div className="relative aspect-[16/9] overflow-hidden sm:rounded-t-3xl">
                 <img
-                  src={selected.image}
+                  src={assetPath(selected.image)}
                   alt={selected.name}
                   className="h-full w-full object-cover"
                 />

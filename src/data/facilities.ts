@@ -46,7 +46,7 @@ export const facilities: Facility[] = [
     category: "Pendidikan",
     description:
       "Sekolah dasar negeri yang melayani pendidikan tingkat dasar bagi anak-anak Desa Karangrejo.",
-    image: "/images/facility-sekolah.png",
+    image: "images/facility-sekolah.png",
     location: "Dukuh Karangrejo",
   },
   {
@@ -55,7 +55,7 @@ export const facilities: Facility[] = [
     category: "Pendidikan",
     description:
       "Lembaga pendidikan anak usia dini yang mendampingi tumbuh kembang anak desa.",
-    image: "/images/facility-sekolah.png",
+    image: "images/facility-sekolah.png",
     location: "Dukuh Purwosari",
   },
   {
@@ -64,7 +64,7 @@ export const facilities: Facility[] = [
     category: "Kesehatan",
     description:
       "Layanan kesehatan masyarakat rutin untuk balita, ibu hamil, dan lansia di setiap dusun.",
-    image: "/images/facility-puskesmas.png",
+    image: "images/facility-puskesmas.png",
     location: "Lintas Dusun",
   },
   {
@@ -73,7 +73,7 @@ export const facilities: Facility[] = [
     category: "Kesehatan",
     description:
       "Fasilitas rujukan kesehatan tingkat dasar terdekat yang melayani masyarakat Karangrejo.",
-    image: "/images/facility-puskesmas.png",
+    image: "images/facility-puskesmas.png",
     location: "Pusat Kecamatan Kawedanan",
   },
   {
@@ -82,7 +82,7 @@ export const facilities: Facility[] = [
     category: "Keagamaan",
     description:
       "Pusat kegiatan keagamaan dan ibadah utama warga Desa Karangrejo.",
-    image: "/images/facility-masjid.png",
+    image: "images/facility-masjid.png",
     location: "Dukuh Karangrejo",
   },
   {
@@ -91,7 +91,7 @@ export const facilities: Facility[] = [
     category: "Keagamaan",
     description:
       "Tempat ibadah harian dan kegiatan pengajian warga di Dukuh Purwosari.",
-    image: "/images/facility-masjid.png",
+    image: "images/facility-masjid.png",
     location: "Dukuh Purwosari",
   },
   {
@@ -100,7 +100,7 @@ export const facilities: Facility[] = [
     category: "Pemerintahan",
     description:
       "Kantor pusat pemerintahan desa tempat pelayanan administrasi dan kegiatan musyawarah warga.",
-    image: "/images/facility-balai.png",
+    image: "images/facility-balai.png",
     location: "Dukuh Karangrejo",
   },
   {
@@ -109,7 +109,7 @@ export const facilities: Facility[] = [
     category: "Pemerintahan",
     description:
       "Ruang pertemuan dan kegiatan serbaguna untuk acara desa, pelatihan, dan musyawarah.",
-    image: "/images/facility-balai.png",
+    image: "images/facility-balai.png",
     location: "Samping Balai Desa",
   },
   {
@@ -118,7 +118,7 @@ export const facilities: Facility[] = [
     category: "Olahraga",
     description:
       "Lapangan voli yang menjadi tempat latihan dan turnamen antar-dusun.",
-    image: "/images/facility-lapangan.png",
+    image: "images/facility-lapangan.png",
     location: "Dukuh Purwoseco",
   },
   {
@@ -127,7 +127,7 @@ export const facilities: Facility[] = [
     category: "Olahraga",
     description:
       "Lapangan terbuka untuk sepak bola dan kegiatan olahraga masyarakat.",
-    image: "/images/facility-lapangan.png",
+    image: "images/facility-lapangan.png",
     location: "Dukuh Karangrejo",
   },
   {
@@ -136,7 +136,7 @@ export const facilities: Facility[] = [
     category: "Fasilitas Umum",
     description:
       "Jaringan jalan desa dengan penerangan jalan umum untuk aksesibilitas warga.",
-    image: "/images/about-village.png",
+    image: "images/about-village.png",
     location: "Lintas Dukuh",
   },
   {
@@ -145,7 +145,7 @@ export const facilities: Facility[] = [
     category: "Fasilitas Umum",
     description:
       "Sarana air bersih yang dikelola secara komunal untuk memenuhi kebutuhan harian warga.",
-    image: "/images/about-village.png",
+    image: "images/about-village.png",
     location: "Dukuh Purwosari & Purwoseco",
   },
 ];

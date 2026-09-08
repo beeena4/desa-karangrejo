@@ -7,6 +7,7 @@ import {
 import { Reveal, Stagger, staggerItem } from "@/components/site/Reveal";
 import { SectionHeading } from "@/components/site/VillageStats";
 import { CountUp } from "@/components/site/CountUp";
+import { assetPath } from "@/lib/utils";
 import {
   villageStats,
   villageHistory,
@@ -92,7 +93,7 @@ export function ProfilView() {
               <div className="absolute -inset-3 -z-10 rounded-[2rem] bg-gradient-to-tr from-primary/15 to-sage-light/40 blur-2xl" />
               <div className="overflow-hidden rounded-[1.75rem] border border-border shadow-xl">
                 <img
-                  src="/images/profile-dusun.png"
+                  src={assetPath("images/profile-dusun.png")}
                   alt="Suasana dusun Desa Karangrejo"
                   className="aspect-[4/3] w-full object-cover"
                   loading="lazy"
@@ -165,7 +166,7 @@ export function ProfilView() {
               >
                 <div className="relative aspect-square overflow-hidden bg-secondary">
                   <img
-                    src={person.img}
+                    src={assetPath(person.img)}
                     alt={person.name}
                     className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
                     loading="lazy"

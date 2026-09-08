@@ -10,6 +10,7 @@ import { SectionHeading } from "@/components/site/VillageStats";
 import { Reveal, Stagger, staggerItem } from "@/components/site/Reveal";
 import { potencies } from "@/data/potencies";
 import { useNavStore } from "@/store/nav";
+import { assetPath } from "@/lib/utils";
 import { motion } from "framer-motion";
 import { ArrowRight, ArrowUpRight } from "lucide-react";
 
@@ -41,7 +42,7 @@ export function HomeView() {
               >
                 <div className="relative aspect-[16/11] overflow-hidden">
                   <img
-                    src={p.image}
+                    src={assetPath(p.image)}
                     alt={p.title}
                     className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
                     loading="lazy"

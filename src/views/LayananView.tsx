@@ -6,6 +6,7 @@ import { Stagger, staggerItem } from "@/components/site/Reveal";
 import { CTASection } from "@/components/site/CTASection";
 import { letterServices, openLetterForm } from "@/data/services";
 import { villageContact } from "@/data/site";
+import { assetPath } from "@/lib/utils";
 import { ExternalLink, Info, FileText, MessageCircle, Clock } from "lucide-react";
 
 export function LayananView() {
@@ -41,7 +42,7 @@ export function LayananView() {
       {/* Service cards */}
       <section className="px-4 sm:px-6 lg:px-8 py-12 md:py-16">
         <div className="mx-auto max-w-7xl">
-          <Stagger className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <Stagger className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {letterServices.map((service) => (
               <motion.article
                 key={service.slug}
@@ -51,7 +52,7 @@ export function LayananView() {
                 {/* Document illustration */}
                 <div className="relative aspect-[16/10] overflow-hidden bg-gradient-to-br from-primary/10 via-sage-light/40 to-background">
                   <img
-                    src={service.image}
+                    src={assetPath(service.image)}
                     alt={service.name}
                     className="h-full w-full object-cover opacity-90 transition-transform duration-700 group-hover:scale-105"
                     loading="lazy"
@@ -87,7 +88,7 @@ export function LayananView() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
-            className="mt-12 grid gap-5 sm:grid-cols-3"
+            className="mx-auto mt-12 grid max-w-3xl gap-5 sm:grid-cols-2"
           >
             <ContactCard
               icon={<MessageCircle className="h-5 w-5" />}
@@ -99,11 +100,6 @@ export function LayananView() {
               icon={<Clock className="h-5 w-5" />}
               title="Jam Layanan"
               value={villageContact.hours}
-            />
-            <ContactCard
-              icon={<Info className="h-5 w-5" />}
-              title="Informasi"
-              value={villageContact.phone}
             />
           </motion.div>
         </div>

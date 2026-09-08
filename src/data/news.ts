@@ -17,7 +17,7 @@ export const newsArticles: NewsArticle[] = [
       "Warga Desa Karangrejo bersama pemdes menggelar gotong royong membersihkan saluran irigasi menjelang musim tanam.",
     category: "Kegiatan Warga",
     date: "2026-02-18",
-    image: "/images/news-1.png",
+    image: "images/news-1.png",
     author: "Sekretariat Desa Karangrejo",
     content: [
       "Dalam rangka menyambut musim tanam berikutnya, warga Desa Karangrejo bersama perangkat desa menggelar kegiatan gotong royong pembersihan saluran irigasi yang melintasi tiga dusun.",
@@ -32,7 +32,7 @@ export const newsArticles: NewsArticle[] = [
       "Posyandu Balita di Desa Karangrejo meraih predikat Mandiri berkat partisipasi aktif kader dan masyarakat.",
     category: "Kesehatan",
     date: "2026-02-10",
-    image: "/images/news-2.png",
+    image: "images/news-2.png",
     author: "Sekretariat Desa Karangrejo",
     content: [
       "Posyandu Balita Desa Karangrejo berhasil meraih predikat Mandiri pada penilaian Posyandu tingkat kecamatan.",
@@ -47,7 +47,7 @@ export const newsArticles: NewsArticle[] = [
       "Proyek peningkatan jalan Dusun Purwoseco dimulai untuk memperlancar aksesibilitas warga dan distribusi hasil tani.",
     category: "Pembangunan",
     date: "2026-01-28",
-    image: "/images/news-3.png",
+    image: "images/news-3.png",
     author: "Sekretariat Desa Karangrejo",
     content: [
       "Pemerintah Desa Karangrejo memulai pekerjaan peningkatan jalan di Dusun Purwoseco sebagai bagian dari program pembangunan infrastruktur desa.",

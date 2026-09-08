@@ -2,10 +2,7 @@ import {
   Home,
   Store,
   HandHeart,
-  ClipboardList,
-  Baby,
-  Flower2,
-  FileText,
+  FileWarning,
   type LucideIcon,
 } from "lucide-react";
 import { letterFormLinks } from "./site";
@@ -27,22 +24,22 @@ export type LetterService = {
  */
 export const letterServices: LetterService[] = [
   {
-    slug: "surat-keterangan-domisili",
-    name: "Surat Keterangan Domisili",
-    description:
-      "Surat keterangan tempat tinggal warga di wilayah Desa Karangrejo.",
-    icon: Home,
-    image: "/images/facility-balai.png",
-    formUrl: letterFormLinks.domisili,
-  },
-  {
     slug: "surat-keterangan-usaha",
     name: "Surat Keterangan Usaha",
     description:
       "Surat pengantar untuk mengurus izin usaha atau keperluan permodalan UMKM.",
     icon: Store,
-    image: "/images/potensi-umkm.png",
+    image: "images/potensi-umkm.png",
     formUrl: letterFormLinks.usaha,
+  },
+  {
+    slug: "surat-keterangan-domisili",
+    name: "Surat Keterangan Domisili",
+    description:
+      "Surat keterangan tempat tinggal warga di wilayah Desa Karangrejo.",
+    icon: Home,
+    image: "images/facility-balai.png",
+    formUrl: letterFormLinks.domisili,
   },
   {
     slug: "surat-keterangan-tidak-mampu",
@@ -50,44 +47,17 @@ export const letterServices: LetterService[] = [
     description:
       "Surat keterangan untuk keperluan bantuan sosial, beasiswa, atau keringanan biaya.",
     icon: HandHeart,
-    image: "/images/facility-puskesmas.png",
+    image: "images/facility-puskesmas.png",
     formUrl: letterFormLinks.tidakMampu,
   },
   {
-    slug: "surat-pengantar",
-    name: "Surat Pengantar",
+    slug: "surat-keterangan-kehilangan",
+    name: "Surat Keterangan Kehilangan",
     description:
-      "Surat pengantar RT/RW untuk berbagai keperluan administrasi warga.",
-    icon: ClipboardList,
-    image: "/images/facility-balai.png",
-    formUrl: letterFormLinks.pengantar,
-  },
-  {
-    slug: "surat-keterangan-kelahiran",
-    name: "Surat Keterangan Kelahiran",
-    description:
-      "Surat keterangan kelahiran sebagai dokumen pendukung pengurusan Akta Kelahiran.",
-    icon: Baby,
-    image: "/images/news-2.png",
-    formUrl: letterFormLinks.kelahiran,
-  },
-  {
-    slug: "surat-keterangan-kematian",
-    name: "Surat Keterangan Kematian",
-    description:
-      "Surat keterangan kematian sebagai dokumen pendukung pengurusan Akta Kematian.",
-    icon: Flower2,
-    image: "/images/facility-masjid.png",
-    formUrl: letterFormLinks.kematian,
-  },
-  {
-    slug: "surat-keterangan-lainnya",
-    name: "Surat Keterangan Lainnya",
-    description:
-      "Surat keterangan lain sesuai kebutuhan administrasi warga Desa Karangrejo.",
-    icon: FileText,
-    image: "/images/facility-balai.png",
-    formUrl: letterFormLinks.lainnya,
+      "Surat keterangan kehilangan dokumen atau barang sebagai persyaratan pengurusan lebih lanjut.",
+    icon: FileWarning,
+    image: "images/facility-balai.png",
+    formUrl: letterFormLinks.kehilangan,
   },
 ];
 

@@ -24,7 +24,7 @@ export const potencies: Potency[] = [
     category: "Sektor Pertanian",
     title: "Pertanian",
     icon: Sprout,
-    image: "/images/potensi-pertanian.png",
+    image: "images/potensi-pertanian.png",
     description:
       "Desa Karangrejo dikenal sebagai desa agraris dengan hamparan sawah subur yang menjadi tulang punggung ekonomi masyarakat.",
     details: [
@@ -39,7 +39,7 @@ export const potencies: Potency[] = [
     category: "Warisan Lokal",
     title: "Jamu Tradisional",
     icon: FlaskConical,
-    image: "/images/potensi-jamu.png",
+    image: "images/potensi-jamu.png",
     highlight: true,
     description:
       "Karangrejo dikenal sebagai desa penghasil jamu tradisional. Racikan herbal warisan leluhur masih lestari dan menjadi kebanggaan warga.",
@@ -55,7 +55,7 @@ export const potencies: Potency[] = [
     category: "Perekonomian",
     title: "Perdagangan",
     icon: Store,
-    image: "/images/potensi-perdagangan.png",
+    image: "images/potensi-perdagangan.png",
     description:
       "Aktivitas perdagangan berkembang di pasar desa dan lapak warga, menjadi simpul distribusi kebutuhan harian masyarakat.",
     details: [
@@ -70,7 +70,7 @@ export const potencies: Potency[] = [
     category: "Pemberdayaan Ekonomi",
     title: "UMKM Desa",
     icon: Handshake,
-    image: "/images/potensi-umkm.png",
+    image: "images/potensi-umkm.png",
     description:
       "Usaha Mikro, Kecil, dan Menengah tumbuh subur di Karangrejo, dari kuliner hingga kerajinan, sebagai motor ekonomi rakyat.",
     details: [
@@ -85,7 +85,7 @@ export const potencies: Potency[] = [
     category: "Budaya & Tradisi",
     title: "Budaya dan Tradisi",
     icon: Landmark,
-    image: "/images/potensi-budaya.png",
+    image: "images/potensi-budaya.png",
     description:
       "Tradisi spiritual dan budaya tetap dijaga sebagai bentuk syukur dan mempererat tali persaudaraan antarwarga.",
     details: [

@@ -4,16 +4,17 @@ import { motion } from "framer-motion";
 import { ArrowRight, FileText, MapPin, Leaf } from "lucide-react";
 import { siteConfig } from "@/data/site";
 import { useNavStore } from "@/store/nav";
+import { assetPath } from "@/lib/utils";
 
 export function Hero() {
   const setNav = useNavStore((s) => s.setNav);
 
   return (
-    <section className="relative -mt-16 md:-mt-20 flex min-h-[100svh] items-center overflow-hidden">
+    <section className="relative isolate -mt-16 md:-mt-20 flex min-h-[100svh] items-center overflow-hidden">
       {/* Background image */}
-      <div className="absolute inset-0 -z-10">
+      <div className="absolute inset-0 z-0">
         <img
-          src="/images/hero.png"
+          src={assetPath("images/hero.png")}
           alt="Pemandangan Desa Karangrejo"
           className="h-full w-full object-cover animate-slow-zoom"
         />
@@ -22,7 +23,7 @@ export function Hero() {
       </div>
 
       {/* Floating decorative leaves */}
-      <div className="pointer-events-none absolute inset-0 -z-10 overflow-hidden">
+      <div className="pointer-events-none absolute inset-0 z-10 overflow-hidden">
         <Leaf
           className="absolute left-[8%] top-[28%] h-8 w-8 text-white/25 animate-float-soft"
           strokeWidth={1.5}
@@ -37,7 +38,7 @@ export function Hero() {
         />
       </div>
 
-      <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8 pt-28 md:pt-32 pb-20">
+      <div className="relative z-20 mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8 pt-28 md:pt-32 pb-20">
         <div className="max-w-3xl">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -98,7 +99,7 @@ export function Hero() {
       </div>
 
       {/* Bottom fade into next section */}
-      <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-background to-transparent" />
+      <div className="absolute bottom-0 left-0 right-0 z-30 h-24 bg-gradient-to-t from-background to-transparent" />
     </section>
   );
 }

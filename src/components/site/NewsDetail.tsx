@@ -5,6 +5,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { X, Calendar, Tag, User } from "lucide-react";
 import { useNavStore } from "@/store/nav";
 import { newsArticles, formatDateID } from "@/data/news";
+import { assetPath } from "@/lib/utils";
 
 export function NewsDetail() {
   const newsId = useNavStore((s) => s.newsId);
@@ -52,7 +53,7 @@ export function NewsDetail() {
             </button>
             <div className="relative aspect-[16/9] overflow-hidden sm:rounded-t-3xl">
               <img
-                src={article.image}
+                src={assetPath(article.image)}
                 alt={article.title}
                 className="h-full w-full object-cover"
               />

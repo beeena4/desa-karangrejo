@@ -5,6 +5,7 @@ import { PageHero } from "@/components/site/PageHero";
 import { Reveal, Stagger, staggerItem } from "@/components/site/Reveal";
 import { CTASection } from "@/components/site/CTASection";
 import { potencies, culturalEvents } from "@/data/potencies";
+import { assetPath } from "@/lib/utils";
 import { ArrowUpRight, Landmark, Sparkles } from "lucide-react";
 
 export function PotensiView() {
@@ -28,7 +29,7 @@ export function PotensiView() {
               >
                 <div className="relative aspect-[16/11] overflow-hidden">
                   <img
-                    src={p.image}
+                    src={assetPath(p.image)}
                     alt={p.title}
                     className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
                     loading="lazy"

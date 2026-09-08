@@ -75,14 +75,14 @@ export const visiMisi = {
 };
 
 export const governmentStructure = [
-  { role: "Kepala Desa", name: "Bapak H. Sutrisno, S.Sos", img: "/images/profile-struktur.png" },
-  { role: "Sekretaris Desa", name: "Bapak Agus Priyanto, S.E", img: "/images/profile-struktur.png" },
-  { role: "Kaur Keuangan", name: "Ibu Dwi Astuti, A.Md", img: "/images/profile-struktur.png" },
-  { role: "Kaur Perencanaan", name: "Bapak Joko Susilo", img: "/images/profile-struktur.png" },
-  { role: "Kasi Pemerintahan", name: "Bapak Suparman", img: "/images/profile-struktur.png" },
-  { role: "Kasi Kesejahteraan", name: "Ibu Sulastri", img: "/images/profile-struktur.png" },
-  { role: "Kasi Pelayanan", name: "Bapak Bambang Wijaya", img: "/images/profile-struktur.png" },
-  { role: "Kepala Dusun Purwosari", name: "Bapak Wahyudi", img: "/images/profile-struktur.png" },
+  { role: "Kepala Desa", name: "Bapak H. Sutrisno, S.Sos", img: "images/profile-struktur.png" },
+  { role: "Sekretaris Desa", name: "Bapak Agus Priyanto, S.E", img: "images/profile-struktur.png" },
+  { role: "Kaur Keuangan", name: "Ibu Dwi Astuti, A.Md", img: "images/profile-struktur.png" },
+  { role: "Kaur Perencanaan", name: "Bapak Joko Susilo", img: "images/profile-struktur.png" },
+  { role: "Kasi Pemerintahan", name: "Bapak Suparman", img: "images/profile-struktur.png" },
+  { role: "Kasi Kesejahteraan", name: "Ibu Sulastri", img: "images/profile-struktur.png" },
+  { role: "Kasi Pelayanan", name: "Bapak Bambang Wijaya", img: "images/profile-struktur.png" },
+  { role: "Kepala Dusun Purwosari", name: "Bapak Wahyudi", img: "images/profile-struktur.png" },
 ];
 
 export const territoryData = [

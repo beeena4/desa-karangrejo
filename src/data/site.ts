@@ -41,10 +41,7 @@ export const letterFormLinks = {
   domisili: "[LINK_GFORM_DOMISILI]",
   usaha: "[LINK_GFORM_USAHA]",
   tidakMampu: "[LINK_GFORM_TIDAK_MAMPU]",
-  pengantar: "[LINK_GFORM_PENGANTAR]",
-  kelahiran: "[LINK_GFORM_KELAHIRAN]",
-  kematian: "[LINK_GFORM_KEMATIAN]",
-  lainnya: "[LINK_GFORM_LAINNYA]",
+  kehilangan: "[LINK_GFORM_KEHILANGAN]",
 } as const;
 
 export type NavKey =

@@ -6,6 +6,7 @@ import { SectionHeading } from "./VillageStats";
 import { motion } from "framer-motion";
 import { newsArticles, formatDateID } from "@/data/news";
 import { useNavStore } from "@/store/nav";
+import { assetPath } from "@/lib/utils";
 
 export function NewsSection() {
   const openNews = useNavStore((s) => s.openNews);
@@ -44,7 +45,7 @@ export function NewsSection() {
                 className="relative block aspect-[16/10] overflow-hidden"
               >
                 <img
-                  src={article.image}
+                  src={assetPath(article.image)}
                   alt={article.title}
                   className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
                   loading="lazy"

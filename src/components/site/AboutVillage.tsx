@@ -3,6 +3,7 @@
 import { ArrowRight, Leaf, Check } from "lucide-react";
 import { Reveal } from "./Reveal";
 import { useNavStore } from "@/store/nav";
+import { assetPath } from "@/lib/utils";
 
 const highlights = [
   "Potensi pertanian dan jamu tradisional",
@@ -23,7 +24,7 @@ export function AboutVillage() {
             <div className="absolute -inset-3 -z-10 rounded-[2rem] bg-gradient-to-tr from-primary/15 via-sage-light/40 to-transparent blur-2xl" />
             <div className="overflow-hidden rounded-[1.75rem] border border-border shadow-xl">
               <img
-                src="/images/about-village.png"
+                src={assetPath("images/about-village.png")}
                 alt="Suasana Desa Karangrejo"
                 className="aspect-[4/3] w-full object-cover transition-transform duration-700 hover:scale-105"
                 loading="lazy"

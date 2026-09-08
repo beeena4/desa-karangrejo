@@ -43,6 +43,8 @@ next-env.d.ts
 local-*
 .claude
 .z-ai-config
+AGENTS.md
+CLAUDE.md
 *.log
 dev.log
 dev.out.log

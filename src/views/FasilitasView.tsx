@@ -6,6 +6,7 @@ import { PageHero } from "@/components/site/PageHero";
 import { Reveal } from "@/components/site/Reveal";
 import { CTASection } from "@/components/site/CTASection";
 import { facilities, facilityCategories, type FacilityCategory } from "@/data/facilities";
+import { assetPath } from "@/lib/utils";
 import { MapPin, Search } from "lucide-react";
 
 type Filter = FacilityCategory | "Semua";
@@ -70,26 +71,29 @@ export function FasilitasView() {
           </Reveal>
 
           {/* Results */}
-          <motion.div
-            layout
-            className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3"
-          >
-            <AnimatePresence mode="popLayout">
+          <AnimatePresence mode="wait" initial={false}>
+            <motion.div
+              key={`${filter}-${query}`}
+              initial={{ opacity: 0, y: 8 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -4 }}
+              transition={{ duration: 0.35, ease: [0.22, 1, 0.36, 1] }}
+              className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3"
+            >
               {filtered.map((f) => (
-                <motion.article
+                <a
                   key={f.id}
-                  layout
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  exit={{ opacity: 0, scale: 0.96 }}
-                  transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
-                  className="group overflow-hidden rounded-3xl border border-border bg-card transition-all duration-300 hover:shadow-xl hover:-translate-y-1"
+                  href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`${f.name}, ${f.location}, Desa Karangrejo, Kawedanan, Magetan`)}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={`Buka lokasi ${f.name} di Google Maps`}
+                  className="group overflow-hidden rounded-3xl border border-border bg-card transition-shadow duration-300 hover:shadow-lg"
                 >
                   <div className="relative aspect-[16/10] overflow-hidden">
                     <img
-                      src={f.image}
+                      src={assetPath(f.image)}
                       alt={f.name}
-                      className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
+                      className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
                       loading="lazy"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/55 to-transparent" />
@@ -107,10 +111,10 @@ export function FasilitasView() {
                       {f.location}
                     </div>
                   </div>
-                </motion.article>
+                </a>
               ))}
-            </AnimatePresence>
-          </motion.div>
+            </motion.div>
+          </AnimatePresence>
 
           {filtered.length === 0 && (
             <div className="mt-12 text-center text-sm text-muted-foreground">

@@ -3,6 +3,7 @@
 import { ArrowRight, Leaf } from "lucide-react";
 import { Reveal } from "./Reveal";
 import { useNavStore } from "@/store/nav";
+import { assetPath } from "@/lib/utils";
 
 export function CTASection() {
   const setNav = useNavStore((s) => s.setNav);
@@ -15,7 +16,7 @@ export function CTASection() {
             {/* BG image */}
             <div className="absolute inset-0 -z-10 opacity-25">
               <img
-                src="/images/cta-bg.png"
+                src={assetPath("images/cta-bg.png")}
                 alt=""
                 className="h-full w-full object-cover"
                 loading="lazy"
