@@ -26,6 +26,7 @@ import {
   Flag,
   Sparkles,
   ArrowRight,
+  Play,
 } from "lucide-react";
 
 const iconMap = {
@@ -87,6 +88,34 @@ export function ProfilView() {
               );
             })}
           </Stagger>
+        </div>
+      </section>
+
+      {/* Video Profil Desa */}
+      <section className="px-4 sm:px-6 lg:px-8 py-12 md:py-16 bg-secondary/40">
+        <div className="mx-auto max-w-7xl">
+          <SectionHeading
+            eyebrow="Video Profil"
+            title="Mengenal Desa Karangrejo"
+            description="Saksikan gambaran singkat tentang kehidupan, potensi, dan aktivitas masyarakat Desa Karangrejo."
+          />
+          <Reveal className="mt-10">
+            <div className="relative overflow-hidden rounded-3xl border border-border bg-card shadow-xl">
+              <video
+                className="aspect-video w-full object-cover"
+                controls
+                preload="metadata"
+                poster={assetPath("images/profile-dusun.png")}
+              >
+                <source src={assetPath("videos/profil-desa.mp4")} type="video/mp4" />
+                Browser Anda tidak mendukung pemutaran video.
+              </video>
+              <div className="pointer-events-none absolute left-5 top-5 inline-flex items-center gap-2 rounded-full bg-forest/90 px-3.5 py-2 text-xs font-semibold text-white backdrop-blur-sm">
+                <Play className="h-3.5 w-3.5 fill-current" />
+                Video Profil Desa
+              </div>
+            </div>
+          </Reveal>
         </div>
       </section>
 
