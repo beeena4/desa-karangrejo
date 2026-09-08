@@ -208,4 +208,20 @@ export const facilities: Facility[] = [
     image: "images/about-village.png",
     location: "Krapyak, Kawedanan, Magetan",
   },
+  {
+    id: "f22",
+    name: "Lapangan Desa Karangrejo",
+    category: "Olahraga",
+    description: "Lapangan desa untuk kegiatan olahraga dan aktivitas masyarakat Karangrejo.",
+    image: "images/facility-lapangan.png",
+    location: "Desa Karangrejo, Kawedanan",
+  },
+  {
+    id: "f23",
+    name: "Lapangan Volly Ds. Karangrejo",
+    category: "Olahraga",
+    description: "Lapangan voli untuk latihan dan kegiatan olahraga masyarakat Desa Karangrejo.",
+    image: "images/facility-lapangan.png",
+    location: "Desa Karangrejo, Kawedanan",
+  },
 ];
