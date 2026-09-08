@@ -11,7 +11,7 @@ import { potencies } from "@/data/potencies";
 import { useNavStore } from "@/store/nav";
 import { assetPath } from "@/lib/utils";
 import { motion } from "framer-motion";
-import { ArrowRight, ArrowUpRight } from "lucide-react";
+import { ArrowRight, ArrowUpRight, Play } from "lucide-react";
 
 export function HomeView() {
   const setNav = useNavStore((s) => s.setNav);
@@ -21,6 +21,46 @@ export function HomeView() {
       <Hero />
       <QuickAccess />
       <AboutVillage />
+
+      {/* Video Profil Desa */}
+      <section className="px-4 sm:px-6 lg:px-8 py-16 md:py-20 bg-secondary/40">
+        <div className="mx-auto max-w-7xl grid gap-10 lg:grid-cols-[0.8fr_1.2fr] items-center">
+          <Reveal>
+            <span className="inline-flex items-center gap-2 rounded-full bg-primary/10 px-3.5 py-1.5 text-xs font-semibold text-primary">
+              <Play className="h-3.5 w-3.5 fill-current" />
+              Video Profil Desa
+            </span>
+            <h2 className="mt-5 text-3xl md:text-4xl font-bold tracking-tight text-foreground text-balance">
+              Lihat lebih dekat Desa Karangrejo
+            </h2>
+            <p className="mt-5 text-base leading-relaxed text-muted-foreground text-pretty">
+              Kenali kehidupan, potensi, dan aktivitas masyarakat Desa Karangrejo
+              melalui video profil desa.
+            </p>
+            <button
+              onClick={() => setNav("profil")}
+              className="group mt-7 inline-flex items-center gap-2 text-sm font-semibold text-primary"
+            >
+              Lihat profil desa
+              <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+            </button>
+          </Reveal>
+          <Reveal delay={0.1}>
+            <div className="relative overflow-hidden rounded-3xl border border-border bg-card shadow-xl">
+              <video
+                className="aspect-video w-full object-cover"
+                controls
+                preload="metadata"
+                poster={assetPath("images/profile-dusun.png")}
+              >
+                <source src={assetPath("videos/profil-desa.mp4")} type="video/mp4" />
+                Browser Anda tidak mendukung pemutaran video.
+              </video>
+            </div>
+          </Reveal>
+        </div>
+      </section>
+
       <VillageStats />
 
       {/* Potency preview */}
