@@ -50,11 +50,28 @@ export function ProfilView() {
           <Stagger className="grid grid-cols-2 lg:grid-cols-3 gap-4 md:gap-5">
             {villageStats.map((stat) => {
               const Icon = iconMap[stat.icon as keyof typeof iconMap];
+              const isDusunStat = stat.label === "Jumlah Dusun";
               return (
                 <motion.div
                   key={stat.label}
                   variants={staggerItem}
-                  className="group relative overflow-hidden rounded-3xl border border-border bg-card p-6 text-center transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
+                  onClick={isDusunStat ? () => document.getElementById("dusun")?.scrollIntoView({ behavior: "smooth" }) : undefined}
+                  onKeyDown={
+                    isDusunStat
+                      ? (event) => {
+                          if (event.key === "Enter" || event.key === " ") {
+                            event.preventDefault();
+                            document.getElementById("dusun")?.scrollIntoView({ behavior: "smooth" });
+                          }
+                        }
+                      : undefined
+                  }
+                  role={isDusunStat ? "button" : undefined}
+                  tabIndex={isDusunStat ? 0 : undefined}
+                  aria-label={isDusunStat ? "Lihat daftar dusun Desa Karangrejo" : undefined}
+                  className={`group relative overflow-hidden rounded-3xl border border-border bg-card p-6 text-center transition-all duration-300 hover:-translate-y-1 hover:shadow-xl ${
+                    isDusunStat ? "cursor-pointer focus:outline-none focus:ring-2 focus:ring-primary/40" : ""
+                  }`}
                 >
                   <div className="absolute -right-6 -top-6 h-24 w-24 rounded-full bg-primary/5 transition-transform duration-500 group-hover:scale-150" />
                   <div className="relative">
@@ -231,7 +248,7 @@ export function ProfilView() {
       </section>
 
       {/* Dusun */}
-      <section className="px-4 sm:px-6 lg:px-8 py-16 md:py-24 bg-secondary/40">
+      <section id="dusun" className="scroll-mt-24 px-4 sm:px-6 lg:px-8 py-16 md:py-24 bg-secondary/40">
         <div className="mx-auto max-w-7xl">
           <SectionHeading
             eyebrow="Wilayah"

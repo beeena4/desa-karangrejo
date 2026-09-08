@@ -83,7 +83,7 @@ export function FasilitasView() {
               {filtered.map((f) => (
                 <a
                   key={f.id}
-                  href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`${f.name}, ${f.location}, Desa Karangrejo, Kawedanan, Magetan`)}`}
+                  href={f.mapsUrl ?? `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`${f.name}, ${f.location}, Desa Karangrejo, Kawedanan, Magetan`)}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label={`Buka lokasi ${f.name} di Google Maps`}

@@ -23,6 +23,7 @@ export type Facility = {
   description: string;
   image: string;
   location: string;
+  mapsUrl?: string;
 };
 
 export const facilityCategories: {
@@ -45,7 +46,7 @@ export const facilities: Facility[] = [
     name: "SMPN 1 Kawedanan",
     category: "Pendidikan",
     description: "Sekolah menengah pertama negeri di Kecamatan Kawedanan.",
-    image: "images/facility-sekolah.png",
+    image: "images/smpn 1 kawedanan.png",
     location: "Kawedanan, Magetan",
   },
   {
@@ -93,8 +94,9 @@ export const facilities: Facility[] = [
     name: "Masjid Al-Huda",
     category: "Keagamaan",
     description: "Tempat ibadah dan kegiatan keagamaan masyarakat Desa Karangrejo.",
-    image: "images/facility-masjid.png",
+    image: "images/masjid al-huda.png",
     location: "Desa Karangrejo, Kawedanan",
+    mapsUrl: "https://maps.app.goo.gl/QLMMe6zTMM7Cck9y8",
   },
   {
     id: "f8",
@@ -114,7 +116,7 @@ export const facilities: Facility[] = [
   },
   {
     id: "f10",
-    name: "SDN Karangrejo 1",
+    name: "SDN Karangrejo",
     category: "Pendidikan",
     description: "Sekolah dasar negeri bagi anak-anak Desa Karangrejo.",
     image: "images/facility-sekolah.png",
