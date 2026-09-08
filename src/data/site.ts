@@ -21,7 +21,7 @@ export const villageContact = {
   whatsapp: "6289504189599",
   whatsappDisplay: "0895-0418-9599",
   mapEmbed:
-    "https://maps.app.goo.gl/wLsrYhjBUd8T7iqF8",
+    "https://www.google.com/maps?q=Desa+Karangrejo,+Kawedanan,+Magetan&output=embed",
   hours: "Senin – Jumat • 08.00 – 15.00 WIB",
 } as const;
 
