@@ -28,7 +28,7 @@ export function HomeView() {
         <div className="mx-auto max-w-7xl">
           <SectionHeading
             eyebrow="Potensi Desa"
-            title="Keunggulan Karangrejo"
+            title="Keunggulan Desa Karangrejo"
             description="Dari pertanian subur hingga warisan jamu tradisional, kenali potensi yang dimiliki Desa Karangrejo."
           />
           <Stagger className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">

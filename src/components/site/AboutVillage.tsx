@@ -50,7 +50,7 @@ export function AboutVillage() {
             Tentang Desa
           </span>
           <h2 className="mt-5 text-3xl md:text-4xl lg:text-[2.75rem] font-bold tracking-tight text-foreground text-balance">
-            Kenali Karangrejo Lebih Dekat
+            Kenali Desa Karangrejo Lebih Dekat
           </h2>
           <p className="mt-5 text-base md:text-lg leading-relaxed text-muted-foreground text-pretty">
             Desa Karangrejo merupakan desa yang memiliki potensi di bidang

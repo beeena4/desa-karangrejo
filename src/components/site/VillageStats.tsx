@@ -17,7 +17,7 @@ export function VillageStats() {
   return (
     <section className="px-4 sm:px-6 lg:px-8 py-12 md:py-16">
       <div className="mx-auto max-w-7xl">
-        <Stagger className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-5">
+        <Stagger className="grid grid-cols-2 lg:grid-cols-3 gap-4 md:gap-5">
           {villageStats.map((stat) => {
             const Icon = iconMap[stat.icon as keyof typeof iconMap];
             return (
