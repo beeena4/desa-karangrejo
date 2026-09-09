@@ -13,7 +13,6 @@ import {
   villageHistory,
   visiMisi,
   governmentStructure,
-  territoryData,
   dusunList,
 } from "@/data/profile";
 import {
@@ -247,29 +246,6 @@ export function ProfilView() {
                     {person.name}
                   </p>
                 </div>
-              </motion.div>
-            ))}
-          </Stagger>
-        </div>
-      </section>
-
-      {/* Data Wilayah */}
-      <section className="px-4 sm:px-6 lg:px-8 py-16 md:py-24 bg-secondary/40">
-        <div className="mx-auto max-w-7xl">
-          <SectionHeading
-            eyebrow="Geografis"
-            title="Data Wilayah"
-            description="Letak dan batas wilayah administrasi Desa Karangrejo."
-          />
-          <Stagger className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {territoryData.map((t) => (
-              <motion.div
-                key={t.label}
-                variants={staggerItem}
-                className="flex items-center justify-between rounded-2xl border border-border bg-card px-5 py-4"
-              >
-                <span className="text-sm text-muted-foreground">{t.label}</span>
-                <span className="text-sm font-bold text-foreground">{t.value}</span>
               </motion.div>
             ))}
           </Stagger>
