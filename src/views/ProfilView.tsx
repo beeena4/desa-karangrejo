@@ -100,15 +100,13 @@ export function ProfilView() {
           />
           <Reveal className="mt-10">
             <div className="relative overflow-hidden rounded-3xl border border-border bg-card shadow-xl">
-              <video
-                className="aspect-video w-full object-cover"
-                controls
-                preload="metadata"
-                poster={assetPath("images/profile-dusun.png")}
-              >
-                <source src={assetPath("videos/profil-desa.mp4")} type="video/mp4" />
-                Browser Anda tidak mendukung pemutaran video.
-              </video>
+              <iframe
+                className="aspect-video w-full"
+                src="https://www.youtube.com/embed/P8UOp8vxsw4"
+                title="Video Profil Desa Karangrejo"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              />
               <div className="pointer-events-none absolute left-5 top-5 inline-flex items-center gap-2 rounded-full bg-forest/90 px-3.5 py-2 text-xs font-semibold text-white backdrop-blur-sm">
                 <Play className="h-3.5 w-3.5 fill-current" />
                 Video Profil Desa

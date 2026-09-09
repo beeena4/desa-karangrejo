@@ -11,7 +11,7 @@ import { potencies } from "@/data/potencies";
 import { useNavStore } from "@/store/nav";
 import { assetPath } from "@/lib/utils";
 import { motion } from "framer-motion";
-import { ArrowRight, ArrowUpRight, Play } from "lucide-react";
+import { ArrowRight, Play } from "lucide-react";
 
 export function HomeView() {
   const setNav = useNavStore((s) => s.setNav);
@@ -47,15 +47,13 @@ export function HomeView() {
           </Reveal>
           <Reveal delay={0.1}>
             <div className="relative overflow-hidden rounded-3xl border border-border bg-card shadow-xl">
-              <video
-                className="aspect-video w-full object-cover"
-                controls
-                preload="metadata"
-                poster={assetPath("images/profile-dusun.png")}
-              >
-                <source src={assetPath("videos/profil-desa.mp4")} type="video/mp4" />
-                Browser Anda tidak mendukung pemutaran video.
-              </video>
+              <iframe
+                className="aspect-video w-full"
+                src="https://www.youtube.com/embed/P8UOp8vxsw4"
+                title="Video Profil Desa Karangrejo"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              />
             </div>
           </Reveal>
         </div>
@@ -104,10 +102,6 @@ export function HomeView() {
                   <p className="text-sm leading-relaxed text-muted-foreground line-clamp-2">
                     {p.description}
                   </p>
-                  <span className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-primary">
-                    Lihat Selengkapnya
-                    <ArrowUpRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
-                  </span>
                 </div>
               </motion.button>
             ))}

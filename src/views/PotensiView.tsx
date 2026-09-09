@@ -6,7 +6,7 @@ import { Reveal, Stagger, staggerItem } from "@/components/site/Reveal";
 import { CTASection } from "@/components/site/CTASection";
 import { potencies, culturalEvents } from "@/data/potencies";
 import { assetPath } from "@/lib/utils";
-import { ArrowUpRight, Landmark, Sparkles } from "lucide-react";
+import { Landmark } from "lucide-react";
 
 export function PotensiView() {
   return (
@@ -63,40 +63,10 @@ export function PotensiView() {
                       </li>
                     ))}
                   </ul>
-                  <button className="group/btn mt-6 inline-flex items-center gap-1.5 text-sm font-semibold text-primary">
-                    Lihat Selengkapnya
-                    <ArrowUpRight className="h-4 w-4 transition-transform group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5" />
-                  </button>
                 </div>
               </motion.article>
             ))}
 
-            {/* Culture highlight card spanning */}
-            <motion.div
-              variants={staggerItem}
-              className="relative overflow-hidden rounded-3xl bg-forest p-8 text-white md:p-10 flex flex-col justify-between"
-            >
-              <div className="absolute -right-12 -top-12 h-48 w-48 rounded-full bg-white/10 blur-2xl" />
-              <div className="absolute -left-8 -bottom-8 h-40 w-40 rounded-full bg-white/5 blur-2xl" />
-              <div className="relative">
-                <span className="inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-white/15 backdrop-blur-md">
-                  <Landmark className="h-6 w-6" />
-                </span>
-                <h3 className="mt-5 text-2xl font-bold">Budaya & Tradisi</h3>
-                <p className="mt-3 text-sm leading-relaxed text-white/80">
-                  Desa Karangrejo menjaga tradisi spiritual sebagai wujud syukur
-                  dan mempererat tali persaudaraan antarwarga.
-                </p>
-              </div>
-              <ul className="relative mt-6 space-y-2.5">
-                {culturalEvents.map((e) => (
-                  <li key={e.name} className="flex items-center gap-2.5 text-sm">
-                    <Sparkles className="h-4 w-4 text-sage shrink-0" />
-                    <span className="font-semibold">{e.name}</span>
-                  </li>
-                ))}
-              </ul>
-            </motion.div>
           </Stagger>
         </div>
       </section>
