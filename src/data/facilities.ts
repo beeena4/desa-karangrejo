@@ -54,7 +54,7 @@ export const facilities: Facility[] = [
     name: "Polsek Kawedanan",
     category: "Pemerintahan",
     description: "Kepolisian sektor yang melayani keamanan dan ketertiban masyarakat.",
-    image: "images/facility-balai.png",
+    image: "images/polsek.png",
     location: "Kawedanan, Magetan",
   },
   {
@@ -62,7 +62,7 @@ export const facilities: Facility[] = [
     name: "SMK (STM) PSM 1 Kawedanan",
     category: "Pendidikan",
     description: "Sekolah menengah kejuruan di Kecamatan Kawedanan.",
-    image: "images/facility-sekolah.png",
+    image: "images/smk psm.png",
     location: "Kawedanan, Magetan",
   },
   {
@@ -70,7 +70,7 @@ export const facilities: Facility[] = [
     name: "Bank UMKM Jawa Timur Kantor Kas Kawedanan",
     category: "Fasilitas Umum",
     description: "Kantor kas Bank UMKM Jawa Timur di Kecamatan Kawedanan.",
-    image: "images/about-village.png",
+    image: "images/kantor kas kawedanan.png",
     location: "Kawedanan, Magetan",
   },
   {
@@ -78,7 +78,7 @@ export const facilities: Facility[] = [
     name: "Ponpes MHA",
     category: "Keagamaan",
     description: "Pondok pesantren dan pusat pendidikan keislaman di Kawedanan.",
-    image: "images/facility-masjid.png",
+    image: "images/ponpes mha.png",
     location: "Kawedanan, Magetan",
   },
   {
@@ -119,7 +119,7 @@ export const facilities: Facility[] = [
     name: "SDN Karangrejo",
     category: "Pendidikan",
     description: "Sekolah dasar negeri bagi anak-anak Desa Karangrejo.",
-    image: "images/facility-sekolah.png",
+    image: "images/sdn karangrejo.png",
     location: "Desa Karangrejo, Kawedanan",
   },
   {
@@ -159,7 +159,7 @@ export const facilities: Facility[] = [
     name: "Puskesmas Kawedanan",
     category: "Kesehatan",
     description: "Pusat layanan kesehatan tingkat pertama di Kecamatan Kawedanan.",
-    image: "images/facility-puskesmas.png",
+    image: "images/pukesmas.png",
     location: "Kawedanan, Magetan",
   },
   {
@@ -167,7 +167,7 @@ export const facilities: Facility[] = [
     name: "SLB PGRI Kawedanan",
     category: "Pendidikan",
     description: "Sekolah luar biasa bagi peserta didik berkebutuhan khusus.",
-    image: "images/facility-sekolah.png",
+    image: "images/slb pgri kawedanan.png",
     location: "Kawedanan, Magetan",
   },
   {
@@ -175,15 +175,7 @@ export const facilities: Facility[] = [
     name: "KUA Kecamatan Kawedanan",
     category: "Pemerintahan",
     description: "Kantor layanan urusan agama Islam Kecamatan Kawedanan.",
-    image: "images/facility-balai.png",
-    location: "Kawedanan, Magetan",
-  },
-  {
-    id: "f18",
-    name: "Kantor Pembibitan Tebu",
-    category: "Fasilitas Umum",
-    description: "Fasilitas pembibitan tebu yang mendukung pertanian di Kawedanan.",
-    image: "images/about-village.png",
+    image: "images/kua.jpeg",
     location: "Kawedanan, Magetan",
   },
   {
@@ -191,7 +183,7 @@ export const facilities: Facility[] = [
     name: "UPTD Pendidikan Kecamatan Kawedanan",
     category: "Pemerintahan",
     description: "Unit pelaksana teknis yang mendukung layanan pendidikan di Kawedanan.",
-    image: "images/facility-balai.png",
+    image: "images/uptd pendidikan.png",
     location: "Kawedanan, Magetan",
   },
   {
@@ -199,7 +191,7 @@ export const facilities: Facility[] = [
     name: "MTsN 4 Magetan",
     category: "Pendidikan",
     description: "Madrasah tsanawiyah negeri berbasis keislaman di Kawedanan.",
-    image: "images/facility-sekolah.png",
+    image: "images/mtsn 4 magetan.png",
     location: "Kawedanan, Magetan",
   },
   {
@@ -207,7 +199,7 @@ export const facilities: Facility[] = [
     name: "Punden Krapyak",
     category: "Fasilitas Umum",
     description: "Situs budaya dan tempat bersejarah bagi masyarakat setempat.",
-    image: "images/about-village.png",
+    image: "images/punden.jpeg",
     location: "Krapyak, Kawedanan, Magetan",
   },
   {
@@ -215,15 +207,23 @@ export const facilities: Facility[] = [
     name: "Lapangan Desa Karangrejo",
     category: "Olahraga",
     description: "Lapangan desa untuk kegiatan olahraga dan aktivitas masyarakat Karangrejo.",
-    image: "images/facility-lapangan.png",
+    image: "images/lapangan karangrejo.png",
     location: "Desa Karangrejo, Kawedanan",
   },
   {
-    id: "f23",
-    name: "Lapangan Volly Ds. Karangrejo",
-    category: "Olahraga",
-    description: "Lapangan voli untuk latihan dan kegiatan olahraga masyarakat Desa Karangrejo.",
-    image: "images/facility-lapangan.png",
-    location: "Desa Karangrejo, Kawedanan",
+    id: "f24",
+    name: "Koramil Kawedanan",
+    category: "Pemerintahan",
+    description: "Komando rayon militer yang mendukung keamanan wilayah Kecamatan Kawedanan.",
+    image: "images/koramil.png",
+    location: "Kawedanan, Magetan",
+  },
+  {
+    id: "f25",
+    name: "UPTD Pengairan Bringin",
+    category: "Pemerintahan",
+    description: "Unit pelaksana teknis yang mendukung pengelolaan dan layanan pengairan di Bringin.",
+    image: "images/uptd pengairan.png",
+    location: "Bringin, Magetan",
   },
 ];
