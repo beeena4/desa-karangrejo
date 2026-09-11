@@ -86,7 +86,7 @@ export const facilities: Facility[] = [
     name: "TPA Al-Hidayah",
     category: "Keagamaan",
     description: "Taman pendidikan Al-Qur'an bagi anak-anak di Desa Karangrejo.",
-    image: "images/facility-masjid.png",
+    image: "images/tpa al-hidayah.png",
     location: "Desa Karangrejo, Kawedanan",
   },
   {
@@ -103,7 +103,7 @@ export const facilities: Facility[] = [
     name: "Masjid Nurul Ulum",
     category: "Keagamaan",
     description: "Tempat ibadah dan pengajian masyarakat Desa Karangrejo.",
-    image: "images/facility-masjid.png",
+    image: "images/masjid nurul ulum.png",
     location: "Desa Karangrejo, Kawedanan",
   },
   {
@@ -111,7 +111,7 @@ export const facilities: Facility[] = [
     name: "Masjid Baitulrohim",
     category: "Keagamaan",
     description: "Tempat ibadah dan kegiatan sosial keagamaan di Desa Karangrejo.",
-    image: "images/facility-masjid.png",
+    image: "images/masjid baitulrohim.png",
     location: "Desa Karangrejo, Kawedanan",
   },
   {
@@ -127,7 +127,7 @@ export const facilities: Facility[] = [
     name: "TK Darma Wanita",
     category: "Pendidikan",
     description: "Taman kanak-kanak yang mendukung pendidikan anak usia dini.",
-    image: "images/facility-sekolah.png",
+    image: "images/tk darma wanita.png",
     location: "Desa Karangrejo, Kawedanan",
   },
   {
@@ -135,7 +135,7 @@ export const facilities: Facility[] = [
     name: "RA Muslimat Karangrejo",
     category: "Pendidikan",
     description: "Raudhatul Athfal berbasis keislaman di Desa Karangrejo.",
-    image: "images/facility-sekolah.png",
+    image: "images/RA Muslimat.png",
     location: "Desa Karangrejo, Kawedanan",
   },
   {
@@ -143,7 +143,7 @@ export const facilities: Facility[] = [
     name: "Masjid Al Ihsan",
     category: "Keagamaan",
     description: "Tempat ibadah dan kegiatan keagamaan masyarakat Karangrejo.",
-    image: "images/facility-masjid.png",
+    image: "images/masjid al-ihsan.png",
     location: "Desa Karangrejo, Kawedanan",
   },
   {
@@ -151,7 +151,7 @@ export const facilities: Facility[] = [
     name: "Madrasah Ibtidaiyah Plus Nurul Ulum",
     category: "Pendidikan",
     description: "Madrasah ibtidaiyah dengan pendidikan umum dan keagamaan.",
-    image: "images/facility-sekolah.png",
+    image: "images/MI Plus Nurul Ulum.png",
     location: "Kawedanan, Magetan",
   },
   {
