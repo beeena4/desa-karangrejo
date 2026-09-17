@@ -208,7 +208,7 @@ export function ProfilView() {
             description="Perangkat desa yang melayani dan mengayomi masyarakat Desa Karangrejo."
           />
           <Reveal className="mt-10">
-            <div className="overflow-hidden rounded-3xl border border-border bg-card shadow-lg">
+            <div className="mx-auto w-full max-w-5xl overflow-hidden rounded-3xl border border-border bg-card shadow-lg">
               <img
                 src={assetPath("images/foto bersama perangkat desa.png")}
                 alt="Foto bersama perangkat Desa Karangrejo"
@@ -217,7 +217,7 @@ export function ProfilView() {
               />
             </div>
           </Reveal>
-          <Stagger className="mt-12 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-12">
+          <Stagger className="mx-auto mt-12 grid w-full max-w-5xl grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-12">
             {governmentStructure.map((person, i) => (
               <motion.div
                 key={i}
@@ -226,9 +226,9 @@ export function ProfilView() {
                   i === 8
                     ? "lg:col-start-2"
                     : i === 9
-                      ? "lg:col-start-6"
+                      ? "lg:col-start-5 lg:translate-x-10"
                       : i === 10
-                        ? "lg:col-start-10"
+                        ? "lg:col-start-9"
                         : ""
                 }`}
               >
