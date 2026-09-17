@@ -99,16 +99,16 @@ export function ProfilView() {
             description="Saksikan gambaran singkat tentang kehidupan, potensi, dan aktivitas masyarakat Desa Karangrejo."
           />
           <Reveal className="mt-10">
-            <div className="relative overflow-hidden rounded-3xl border border-border bg-card shadow-xl">
+            <div className="relative aspect-video overflow-hidden rounded-2xl border border-border bg-card shadow-xl sm:rounded-3xl">
               <iframe
-                className="aspect-video w-full"
+                className="absolute inset-0 h-full w-full"
                 src="https://drive.google.com/file/d/1zXD9TOzcnzhwwy9mSMBwsO3NlZBZB_R6/preview?autoplay=1&loop=1"
                 title="Video Profil Desa Karangrejo"
                 allow="autoplay; accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
               />
-              <div className="pointer-events-none absolute left-5 top-5 inline-flex items-center gap-2 rounded-full bg-forest/90 px-3.5 py-2 text-xs font-semibold text-white backdrop-blur-sm">
-                <Play className="h-3.5 w-3.5 fill-current" />
+              <div className="pointer-events-none absolute left-3 top-3 inline-flex items-center gap-1.5 rounded-full bg-forest/90 px-2.5 py-1.5 text-[10px] font-semibold text-white backdrop-blur-sm sm:left-5 sm:top-5 sm:gap-2 sm:px-3.5 sm:py-2 sm:text-xs">
+                <Play className="h-3 w-3 fill-current sm:h-3.5 sm:w-3.5" />
                 Video Profil Desa
               </div>
             </div>
@@ -212,12 +212,12 @@ export function ProfilView() {
               />
             </div>
           </Reveal>
-          <Stagger className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-12">
+          <Stagger className="mt-12 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-12">
             {governmentStructure.map((person, i) => (
               <motion.div
                 key={i}
                 variants={staggerItem}
-                className={`group overflow-hidden rounded-3xl border border-border bg-card transition-all duration-300 hover:shadow-lg hover:-translate-y-1 lg:col-span-3 ${
+                className={`group flex overflow-hidden rounded-3xl border border-border bg-card transition-all duration-300 hover:shadow-lg hover:-translate-y-1 sm:block lg:col-span-3 ${
                   i === 8
                     ? "lg:col-start-2"
                     : i === 9
@@ -227,20 +227,21 @@ export function ProfilView() {
                         : ""
                 }`}
               >
-                <div className="relative aspect-square overflow-hidden bg-secondary">
+                <div className="relative aspect-square w-28 shrink-0 overflow-hidden bg-secondary sm:w-full">
                   <img
                     src={assetPath(person.img)}
                     alt={person.name}
-                    className="h-full w-full object-cover object-[center_15%] transition-transform duration-500 group-hover:scale-[1.08]"
+                    className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.08]"
+                    style={{ objectPosition: person.objectPosition ?? "center 15%" }}
                     loading="lazy"
                   />
                   <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-black/60 to-transparent" />
                 </div>
-                <div className="p-5 text-center">
-                  <p className="text-xs font-semibold uppercase tracking-wide text-primary">
+                <div className="flex min-w-0 flex-1 flex-col justify-center p-4 text-left sm:block sm:p-5 sm:text-center">
+                  <p className="text-[10px] font-semibold uppercase tracking-wide text-primary sm:text-xs">
                     {person.role}
                   </p>
-                  <p className="mt-1.5 text-sm font-bold text-foreground">
+                  <p className="mt-1.5 text-sm font-bold leading-snug text-foreground sm:text-sm">
                     {person.name}
                   </p>
                 </div>
