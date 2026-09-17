@@ -47,14 +47,19 @@ export function HomeView() {
           </Reveal>
           <Reveal delay={0.1}>
             <div className="relative isolate aspect-video w-full overflow-hidden rounded-2xl border border-border bg-card shadow-xl sm:rounded-3xl">
-              <iframe
-                className="absolute inset-0 h-full w-full border-0"
-                src="https://drive.google.com/file/d/1zXD9TOzcnzhwwy9mSMBwsO3NlZBZB_R6/preview?autoplay=1&mute=1"
+              <video
+                className="absolute inset-0 h-full w-full object-contain bg-black"
+                src={assetPath("videos/videoprofil.mp4")}
                 title="Video Profil Desa Karangrejo"
-                allow="autoplay; fullscreen; encrypted-media; picture-in-picture"
+                autoPlay
+                muted
+                playsInline
+                controls
                 allowFullScreen
-                loading="eager"
-              />
+                preload="auto"
+              >
+                Browser Anda tidak mendukung pemutaran video.
+              </video>
             </div>
           </Reveal>
         </div>

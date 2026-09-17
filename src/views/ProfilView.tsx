@@ -100,14 +100,19 @@ export function ProfilView() {
           />
           <Reveal className="mt-10">
             <div className="relative isolate aspect-video w-full overflow-hidden rounded-2xl border border-border bg-card shadow-xl sm:rounded-3xl">
-              <iframe
-                className="absolute inset-0 h-full w-full border-0"
-                src="https://drive.google.com/file/d/1zXD9TOzcnzhwwy9mSMBwsO3NlZBZB_R6/preview?autoplay=1&mute=1"
+              <video
+                className="absolute inset-0 h-full w-full object-contain bg-black"
+                src={assetPath("videos/videoprofil.mp4")}
                 title="Video Profil Desa Karangrejo"
-                allow="autoplay; fullscreen; encrypted-media; picture-in-picture"
+                autoPlay
+                muted
+                playsInline
+                controls
                 allowFullScreen
-                loading="eager"
-              />
+                preload="auto"
+              >
+                Browser Anda tidak mendukung pemutaran video.
+              </video>
               <div className="pointer-events-none absolute left-3 top-3 inline-flex items-center gap-1.5 rounded-full bg-forest/90 px-2.5 py-1.5 text-[10px] font-semibold text-white backdrop-blur-sm sm:left-5 sm:top-5 sm:gap-2 sm:px-3.5 sm:py-2 sm:text-xs">
                 <Play className="h-3 w-3 fill-current sm:h-3.5 sm:w-3.5" />
                 Video Profil Desa
