@@ -27,7 +27,7 @@ export function VillageStats() {
   return (
     <section className="px-4 sm:px-6 lg:px-8 py-12 md:py-16">
       <div className="mx-auto max-w-7xl">
-        <Stagger className="grid grid-cols-2 lg:grid-cols-3 gap-4 md:gap-5">
+        <Stagger className="grid grid-cols-3 gap-2.5 sm:gap-4 md:gap-5">
           {villageStats.map((stat) => {
             const Icon = iconMap[stat.icon as keyof typeof iconMap];
             const isDusunStat = stat.label === "Jumlah Dusun";
@@ -49,19 +49,19 @@ export function VillageStats() {
                 role={isDusunStat ? "button" : undefined}
                 tabIndex={isDusunStat ? 0 : undefined}
                 aria-label={isDusunStat ? "Lihat daftar dusun Desa Karangrejo" : undefined}
-                className={`group relative overflow-hidden rounded-3xl border border-border bg-card p-6 md:p-7 transition-all duration-300 hover:shadow-xl hover:-translate-y-1 ${
+                className={`group relative overflow-hidden rounded-2xl border border-border bg-card p-3 transition-all duration-300 hover:shadow-xl hover:-translate-y-1 sm:rounded-3xl sm:p-6 md:p-7 ${
                   isDusunStat ? "cursor-pointer focus:outline-none focus:ring-2 focus:ring-primary/40" : ""
                 }`}
               >
                 <div className="absolute -right-6 -top-6 h-24 w-24 rounded-full bg-primary/5 transition-transform duration-500 group-hover:scale-150" />
                 <div className="relative">
-                  <span className="inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-primary/10 text-primary">
-                    <Icon className="h-6 w-6" />
+                  <span className="inline-flex h-10 w-10 items-center justify-center rounded-2xl bg-primary/10 text-primary sm:h-12 sm:w-12">
+                    <Icon className="h-5 w-5 sm:h-6 sm:w-6" />
                   </span>
-                  <p className="mt-4 text-3xl md:text-4xl font-bold tracking-tight text-foreground">
+                  <p className="mt-3 whitespace-nowrap text-xl font-bold tracking-tight text-foreground sm:mt-4 sm:text-3xl md:text-4xl">
                     <CountUp end={stat.value} suffix={stat.suffix} />
                   </p>
-                  <p className="mt-1 text-sm text-muted-foreground">
+                  <p className="mt-1 text-[11px] text-muted-foreground sm:text-sm">
                     {stat.label}
                   </p>
                 </div>
