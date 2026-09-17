@@ -2,10 +2,10 @@
 
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X, Leaf, ArrowRight } from "lucide-react";
+import { Menu, X, ArrowRight } from "lucide-react";
 import { navItems, siteConfig, type NavKey } from "@/data/site";
 import { useNavStore } from "@/store/nav";
-import { cn } from "@/lib/utils";
+import { assetPath, cn } from "@/lib/utils";
 
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -51,15 +51,12 @@ export function Navbar() {
           className="group flex items-center gap-3"
           aria-label="Beranda Desa Karangrejo"
         >
-          <span
-            className={cn(
-              "flex h-10 w-10 md:h-11 md:w-11 items-center justify-center rounded-2xl shadow-sm transition-all duration-300 group-hover:scale-105",
-              isOverlay
-                ? "bg-white/15 backdrop-blur-md ring-1 ring-white/30"
-                : "bg-primary text-primary-foreground"
-            )}
-          >
-            <Leaf className="h-5 w-5 md:h-6 md:w-6" />
+          <span className="flex h-14 w-14 items-center justify-center md:h-16 md:w-16">
+            <img
+              src={assetPath("images/logomagetan.png")}
+              alt="Logo Kabupaten Magetan"
+              className="h-full w-full object-contain bg-transparent"
+            />
           </span>
           <span className="flex flex-col leading-tight text-left">
             <span

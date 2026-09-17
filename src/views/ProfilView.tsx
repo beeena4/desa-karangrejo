@@ -205,7 +205,7 @@ export function ProfilView() {
           <Reveal className="mt-10">
             <div className="overflow-hidden rounded-3xl border border-border bg-card shadow-lg">
               <img
-                src={assetPath("images/profile-struktur.png")}
+                src={assetPath("images/foto bersama perangkat desa.png")}
                 alt="Foto bersama perangkat Desa Karangrejo"
                 className="h-64 w-full object-cover object-center sm:h-80 lg:h-[26rem]"
                 loading="lazy"
@@ -231,7 +231,7 @@ export function ProfilView() {
                   <img
                     src={assetPath(person.img)}
                     alt={person.name}
-                    className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    className="h-full w-full object-cover object-[center_15%] transition-transform duration-500 group-hover:scale-[1.08]"
                     loading="lazy"
                   />
                   <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-black/60 to-transparent" />
