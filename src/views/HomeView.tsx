@@ -55,7 +55,6 @@ export function HomeView() {
                 muted
                 playsInline
                 controls
-                allowFullScreen
                 preload="auto"
               >
                 Browser Anda tidak mendukung pemutaran video.
