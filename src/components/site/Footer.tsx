@@ -1,7 +1,6 @@
 "use client";
 
 import {
-  Leaf,
   MapPin,
   MessageCircle,
   Clock,
@@ -17,6 +16,7 @@ import {
   type NavKey,
 } from "@/data/site";
 import { useNavStore } from "@/store/nav";
+import { assetPath } from "@/lib/utils";
 
 export function Footer() {
   const setNav = useNavStore((s) => s.setNav);
@@ -30,8 +30,12 @@ export function Footer() {
           {/* Brand */}
           <div className="lg:col-span-1">
             <div className="flex items-center gap-3">
-              <span className="flex h-11 w-11 items-center justify-center rounded-2xl bg-primary text-primary-foreground">
-                <Leaf className="h-6 w-6" />
+              <span className="flex h-16 w-16 shrink-0 items-center justify-center md:h-20 md:w-20">
+                <img
+                  src={assetPath("images/logomagetan.png")}
+                  alt="Logo Kabupaten Magetan"
+                  className="h-full w-full object-contain"
+                />
               </span>
               <div className="leading-tight">
                 <p className="text-base font-bold">{siteConfig.name}</p>
