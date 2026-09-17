@@ -53,17 +53,17 @@ export const visiMisi = {
 };
 
 export const governmentStructure = [
-  { role: "Kepala Desa", name: "Suharno, SE", img: "images/profile-struktur.png" },
-  { role: "Sekretaris Desa", name: "Ika Dwi R.", img: "images/profile-struktur.png" },
-  { role: "Kasi Kesejahteraan", name: "Nurohim", img: "images/profile-struktur.png" },
-  { role: "Kasi Pelayanan", name: "Abdul Wahib", img: "images/profile-struktur.png" },
-  { role: "Kasi Pemerintahan", name: "Lini Widyawati", img: "images/profile-struktur.png" },
-  { role: "Kaur Tata Usaha & Umum", name: "Suwarno", img: "images/profile-struktur.png" },
-  { role: "Kaur Keuangan", name: "Tarmuji", img: "images/profile-struktur.png" },
-  { role: "Kaur Perencanaan", name: "Sunarto", img: "images/profile-struktur.png" },
-  { role: "Kasun Karangrejo", name: "Lasito", img: "images/profile-struktur.png" },
-  { role: "Kasun Purwosari", name: "Drs. Suyitno", img: "images/profile-struktur.png" },
-  { role: "Kasun Purwoseco", name: "Zawa Ida Fauziatin, S.Pd.", img: "images/profile-struktur.png" },
+  { role: "Kepala Desa", name: "Suharno, SE", img: "images/suharno.png" },
+  { role: "Sekretaris Desa", name: "Ika Dwi R.", img: "images/ika.png", objectPosition: "center 18%" },
+  { role: "Kasi Kesejahteraan", name: "Nurohim", img: "images/nurokhim.jpg", objectPosition: "center 24%" },
+  { role: "Kasi Pelayanan", name: "Abdul Wahib", img: "images/abdul wahid.png" },
+  { role: "Kasi Pemerintahan", name: "Lini Widyawati", img: "images/lini.png", objectPosition: "center 18%" },
+  { role: "Kaur Tata Usaha & Umum", name: "Suwarno", img: "images/suwarno.png", objectPosition: "center 18%" },
+  { role: "Kaur Keuangan", name: "Tarmuji", img: "images/tarmuji.png" },
+  { role: "Kaur Perencanaan", name: "Sunarto", img: "images/sunarto.png" },
+  { role: "Kasun Karangrejo", name: "Lasito", img: "images/lasito.png" },
+  { role: "Kasun Purwosari", name: "Drs. Suyitno", img: "images/suyitno.png", objectPosition: "center 12%" },
+  { role: "Kasun Purwoseco", name: "Zawa Ida Fauziatin, S.Pd.", img: "images/ida.png" },
 ];
 
 export const territoryData = [
