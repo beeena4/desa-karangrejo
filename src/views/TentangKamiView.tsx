@@ -44,10 +44,10 @@ export function TentangKamiView() {
               Tim Pengembang
             </span>
             <h2 className="mt-5 text-3xl font-bold tracking-tight text-foreground md:text-4xl">
-              Tim KKN-T Desa Karangrejo
+              Tim KKN-T UNESA Desa Karangrejo
             </h2>
             <p className="mt-5 text-base leading-relaxed text-muted-foreground md:text-lg">
-              Website ini dikembangkan oleh Tim KKN-T Desa Karangrejo sebagai
+              Website ini dikembangkan oleh Tim KKN-T UNESA Desa Karangrejo sebagai
               bentuk pengabdian, kolaborasi, dan dukungan terhadap kemajuan
               digital desa.
             </p>
@@ -63,12 +63,12 @@ export function TentangKamiView() {
               <article className="ml-auto max-w-xl overflow-hidden rounded-3xl border border-border bg-card shadow-lg">
                 <img
                   src={assetPath("images/kelompokkkn.jpeg")}
-                  alt="Tim KKN-T Desa Karangrejo"
+                  alt="Tim KKN-T UNESA Desa Karangrejo"
                   className="aspect-[16/9] w-full object-cover"
                   loading="lazy"
                 />
                 <div className="p-4 sm:p-5">
-                  <p className="text-sm font-semibold text-primary">Tim KKN-T Desa Karangrejo</p>
+                  <p className="text-sm font-semibold text-primary">Tim KKN-T UNESA Desa Karangrejo</p>
                   <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
                     Bersama mendukung digitalisasi, informasi, dan pengembangan potensi desa.
                   </p>
