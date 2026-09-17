@@ -108,7 +108,6 @@ export function ProfilView() {
                 muted
                 playsInline
                 controls
-                allowFullScreen
                 preload="auto"
               >
                 Browser Anda tidak mendukung pemutaran video.

@@ -114,7 +114,7 @@ export function Navbar() {
         </div>
 
         {/* Mobile toggle */}
-        <div className="flex items-center justify-end gap-2 lg:hidden">
+        <div className="ml-auto flex items-center justify-end gap-2 lg:hidden">
           <button
             onClick={() => setMobileOpen((v) => !v)}
             className={cn(
