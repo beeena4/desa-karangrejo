@@ -46,13 +46,14 @@ export function HomeView() {
             </button>
           </Reveal>
           <Reveal delay={0.1}>
-            <div className="relative overflow-hidden rounded-3xl border border-border bg-card shadow-xl">
+            <div className="relative isolate aspect-video w-full overflow-hidden rounded-2xl border border-border bg-card shadow-xl sm:rounded-3xl">
               <iframe
-                className="aspect-video w-full"
-                src="https://drive.google.com/file/d/1zXD9TOzcnzhwwy9mSMBwsO3NlZBZB_R6/preview?autoplay=1&loop=1"
+                className="absolute inset-0 h-full w-full border-0"
+                src="https://drive.google.com/file/d/1zXD9TOzcnzhwwy9mSMBwsO3NlZBZB_R6/preview?autoplay=1&mute=1"
                 title="Video Profil Desa Karangrejo"
-                allow="autoplay; accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allow="autoplay; fullscreen; encrypted-media; picture-in-picture"
                 allowFullScreen
+                loading="eager"
               />
             </div>
           </Reveal>

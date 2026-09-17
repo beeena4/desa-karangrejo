@@ -106,7 +106,7 @@ export function ProfilView() {
                 title="Video Profil Desa Karangrejo"
                 allow="autoplay; fullscreen; encrypted-media; picture-in-picture"
                 allowFullScreen
-                loading="lazy"
+                loading="eager"
               />
               <div className="pointer-events-none absolute left-3 top-3 inline-flex items-center gap-1.5 rounded-full bg-forest/90 px-2.5 py-1.5 text-[10px] font-semibold text-white backdrop-blur-sm sm:left-5 sm:top-5 sm:gap-2 sm:px-3.5 sm:py-2 sm:text-xs">
                 <Play className="h-3 w-3 fill-current sm:h-3.5 sm:w-3.5" />

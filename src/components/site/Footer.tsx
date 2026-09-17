@@ -117,7 +117,7 @@ export function Footer() {
 
         <div className="mt-12 flex flex-col md:flex-row md:items-center md:justify-between gap-4 border-t border-background/10 pt-6">
           <p className="text-xs text-background/60">
-            © {new Date().getFullYear()} Desa Karangrejo. All Rights Reserved.
+            © {new Date().getFullYear()} KKN-T UNESA Desa Karangrejo. All Rights Reserved.
           </p>
           <p className="text-xs text-background/60">
             Kecamatan Kawedanan, Kabupaten Magetan, Jawa Timur
