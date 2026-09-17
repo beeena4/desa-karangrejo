@@ -9,6 +9,7 @@ import { PotensiView } from "@/views/PotensiView";
 import { FasilitasView } from "@/views/FasilitasView";
 import { LayananView } from "@/views/LayananView";
 import { UmkmView } from "@/views/UmkmView";
+import { TentangKamiView } from "@/views/TentangKamiView";
 import { useNavStore } from "@/store/nav";
 import { AnimatePresence, motion } from "framer-motion";
 
@@ -27,6 +28,8 @@ export default function Home() {
         return <LayananView />;
       case "umkm":
         return <UmkmView />;
+      case "tentang-kami":
+        return <TentangKamiView />;
       default:
         return <HomeView />;
     }
