@@ -102,9 +102,9 @@ export function ProfilView() {
             <div className="relative overflow-hidden rounded-3xl border border-border bg-card shadow-xl">
               <iframe
                 className="aspect-video w-full"
-                src="https://www.youtube.com/embed/P8UOp8vxsw4"
+                src="https://drive.google.com/file/d/1zXD9TOzcnzhwwy9mSMBwsO3NlZBZB_R6/preview?autoplay=1&loop=1"
                 title="Video Profil Desa Karangrejo"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allow="autoplay; accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
               />
               <div className="pointer-events-none absolute left-5 top-5 inline-flex items-center gap-2 rounded-full bg-forest/90 px-3.5 py-2 text-xs font-semibold text-white backdrop-blur-sm">

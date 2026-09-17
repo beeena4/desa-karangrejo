@@ -49,9 +49,9 @@ export function HomeView() {
             <div className="relative overflow-hidden rounded-3xl border border-border bg-card shadow-xl">
               <iframe
                 className="aspect-video w-full"
-                src="https://www.youtube.com/embed/P8UOp8vxsw4"
+                src="https://drive.google.com/file/d/1zXD9TOzcnzhwwy9mSMBwsO3NlZBZB_R6/preview?autoplay=1&loop=1"
                 title="Video Profil Desa Karangrejo"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allow="autoplay; accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
               />
             </div>
