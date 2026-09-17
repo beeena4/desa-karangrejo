@@ -58,10 +58,10 @@ export function Navbar() {
               className="h-full w-full object-contain bg-transparent"
             />
           </span>
-          <span className="flex flex-col leading-tight text-left">
+          <span className="flex min-w-0 flex-col leading-tight text-left">
             <span
               className={cn(
-                "text-sm md:text-base font-bold tracking-tight transition-colors",
+                "whitespace-nowrap text-xs font-bold tracking-tight transition-colors sm:text-sm md:text-base",
                 isOverlay ? "text-white" : "text-foreground"
               )}
             >
@@ -69,7 +69,7 @@ export function Navbar() {
             </span>
             <span
               className={cn(
-                "text-[10px] md:text-xs font-medium transition-colors",
+                "whitespace-nowrap text-[10px] font-medium transition-colors sm:text-xs",
                 isOverlay ? "text-white/80" : "text-muted-foreground"
               )}
             >
