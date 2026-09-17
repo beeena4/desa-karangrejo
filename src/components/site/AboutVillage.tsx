@@ -30,16 +30,6 @@ export function AboutVillage() {
                 loading="lazy"
               />
             </div>
-            {/* Floating badge */}
-            <div className="absolute -bottom-5 -right-2 md:-right-5 hidden sm:flex items-center gap-3 rounded-2xl border border-border bg-card px-5 py-3.5 shadow-xl">
-              <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-primary/10 text-primary">
-                <Leaf className="h-5 w-5" />
-              </span>
-              <div className="leading-tight">
-                <p className="text-xs text-muted-foreground">Desa Agaris</p>
-                <p className="text-sm font-bold text-foreground">Hijau & Sejahtera</p>
-              </div>
-            </div>
           </div>
         </Reveal>
 

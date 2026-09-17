@@ -47,7 +47,8 @@ export type NavKey =
   | "potensi"
   | "fasilitas"
   | "layanan"
-  | "umkm";
+  | "umkm"
+  | "tentang-kami";
 
 export const navItems: { key: NavKey; label: string }[] = [
   { key: "home", label: "Home" },
@@ -56,4 +57,5 @@ export const navItems: { key: NavKey; label: string }[] = [
   { key: "fasilitas", label: "Fasilitas" },
   { key: "layanan", label: "Layanan Surat" },
   { key: "umkm", label: "UMKM" },
+  { key: "tentang-kami", label: "Tentang Kami" },
 ];
