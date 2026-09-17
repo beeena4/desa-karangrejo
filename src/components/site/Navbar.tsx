@@ -44,11 +44,11 @@ export function Navbar() {
           : "bg-background/85 backdrop-blur-xl border-b border-border/60 shadow-[0_4px_24px_-12px_rgba(0,0,0,0.12)]"
       )}
     >
-      <nav className="mx-auto grid h-16 max-w-7xl grid-cols-[1fr_auto_1fr] items-center px-4 sm:px-6 md:h-20 lg:px-8">
+      <nav className="mx-auto flex h-16 max-w-7xl items-center px-4 sm:px-6 md:h-20 lg:px-8">
         {/* Logo + name */}
         <button
           onClick={() => go("home")}
-          className="group flex items-center gap-3"
+          className="group flex shrink-0 items-center gap-3"
           aria-label="Beranda Desa Karangrejo"
         >
           <span className="flex h-14 w-14 items-center justify-center md:h-16 md:w-16">
@@ -79,7 +79,7 @@ export function Navbar() {
         </button>
 
         {/* Desktop nav */}
-        <div className="col-start-2 col-span-2 hidden items-center justify-self-end gap-1 lg:flex">
+        <div className="hidden ml-auto items-center justify-end gap-1 lg:flex">
           {navItems.map((item) => {
             const active = current === item.key;
             return (
@@ -87,7 +87,7 @@ export function Navbar() {
                 key={item.key}
                 onClick={() => go(item.key)}
                 className={cn(
-                  "relative rounded-full px-4 py-2 text-sm font-medium transition-colors",
+                  "relative whitespace-nowrap rounded-full px-4 py-2 text-sm font-medium transition-colors",
                   isOverlay
                     ? active
                       ? "text-white"
@@ -114,7 +114,7 @@ export function Navbar() {
         </div>
 
         {/* Mobile toggle */}
-        <div className="col-start-3 flex items-center justify-end gap-2">
+        <div className="flex items-center justify-end gap-2 lg:hidden">
           <button
             onClick={() => setMobileOpen((v) => !v)}
             className={cn(

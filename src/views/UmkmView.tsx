@@ -22,6 +22,17 @@ import {
 
 type Filter = UmkmCategory | "Semua";
 
+function normalizeWhatsApp(value: string) {
+  return value.replace(/\D/g, "");
+}
+
+function formatWhatsAppDisplay(value: string) {
+  const cleaned = normalizeWhatsApp(value);
+  if (!cleaned) return value;
+  return cleaned.replace(/^(62)/, "62 ").replace(/^(\d{2})(\d{3})(\d{4})(\d{4,})$/, "$1 $2 $3 $4")
+    .replace(/^(62\s\d{3})(\d{3})(\d{4})$/, "$1 $2 $3");
+}
+
 export function UmkmView() {
   const [filter, setFilter] = useState<Filter>("Semua");
   const [query, setQuery] = useState("");
@@ -150,7 +161,7 @@ export function UmkmView() {
                         <ArrowUpRight className="h-3.5 w-3.5 transition-transform group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5" />
                       </button>
                       <a
-                        href={`https://wa.me/${u.whatsapp}`}
+                        href={`https://wa.me/${normalizeWhatsApp(u.whatsapp)}`}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-primary text-primary-foreground transition-all hover:bg-primary/90 hover:shadow-md"
@@ -227,7 +238,8 @@ export function UmkmView() {
                   <InfoRow
                     icon={<Phone className="h-4 w-4" />}
                     label="WhatsApp"
-                    value={`+${selected.whatsapp}`}
+                    value={formatWhatsAppDisplay(selected.whatsapp)}
+                    href={`https://wa.me/${normalizeWhatsApp(selected.whatsapp)}`}
                   />
                   <InfoRow
                     icon={<Package className="h-4 w-4" />}
@@ -253,7 +265,7 @@ export function UmkmView() {
                 </div>
 
                 <a
-                  href={`https://wa.me/${selected.whatsapp}`}
+                  href={`https://wa.me/${normalizeWhatsApp(selected.whatsapp)}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="mt-8 inline-flex w-full items-center justify-center gap-2 rounded-full bg-primary px-6 py-3.5 text-sm font-semibold text-primary-foreground shadow-sm transition-all hover:bg-primary/90 hover:shadow-lg"

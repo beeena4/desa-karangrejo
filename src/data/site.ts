@@ -25,11 +25,6 @@ export const villageContact = {
   hours: "Senin – Jumat • 08.00 – 15.00 WIB",
 } as const;
 
-export const socialLinks = {
-  instagram: "https://instagram.com/desa.karangrejo",
-  youtube: "https://youtube.com/@desa-karangrejo",
-} as const;
-
 /**
  * Tautan Google Form untuk setiap layanan surat.
  * Ganti placeholder di bawah dengan tautan Google Form yang sebenarnya.

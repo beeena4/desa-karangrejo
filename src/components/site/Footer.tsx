@@ -1,17 +1,9 @@
 "use client";
 
-import {
-  MapPin,
-  MessageCircle,
-  Clock,
-  Instagram,
-  Youtube,
-  ArrowUpRight,
-} from "lucide-react";
+import { MapPin, MessageCircle, Clock, ArrowUpRight } from "lucide-react";
 import {
   siteConfig,
   villageContact,
-  socialLinks,
   navItems,
   type NavKey,
 } from "@/data/site";
@@ -48,14 +40,6 @@ export function Footer() {
               Website resmi Desa Karangrejo sebagai media informasi, pelayanan
               publik, dan promosi potensi lokal masyarakat.
             </p>
-            <div className="mt-6 flex items-center gap-3">
-              <SocialIcon href={socialLinks.instagram} label="Instagram">
-                <Instagram className="h-4 w-4" />
-              </SocialIcon>
-              <SocialIcon href={socialLinks.youtube} label="YouTube">
-                <Youtube className="h-4 w-4" />
-              </SocialIcon>
-            </div>
           </div>
 
           {/* Navigation */}
@@ -86,7 +70,14 @@ export function Footer() {
               </li>
               <li className="flex gap-3">
                 <MessageCircle className="mt-0.5 h-4 w-4 shrink-0 text-sage" />
-                <span>{villageContact.whatsappDisplay}</span>
+                <a
+                  href={`https://wa.me/${villageContact.whatsapp}?text=Halo%20Desa%20Karangrejo`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="transition-colors hover:text-background"
+                >
+                  {villageContact.whatsappDisplay}
+                </a>
               </li>
               <li className="flex gap-3">
                 <Clock className="mt-0.5 h-4 w-4 shrink-0 text-sage" />
@@ -140,24 +131,3 @@ function FooterTitle({ children }: { children: React.ReactNode }) {
   );
 }
 
-function SocialIcon({
-  href,
-  label,
-  children,
-}: {
-  href: string;
-  label: string;
-  children: React.ReactNode;
-}) {
-  return (
-    <a
-      href={href}
-      target="_blank"
-      rel="noopener noreferrer"
-      aria-label={label}
-      className="inline-flex h-9 w-9 items-center justify-center rounded-xl bg-background/10 text-background/80 transition-all hover:bg-primary hover:text-primary-foreground hover:-translate-y-0.5"
-    >
-      {children}
-    </a>
-  );
-}
